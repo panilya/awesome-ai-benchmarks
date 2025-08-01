@@ -62,7 +62,7 @@ export default function Header({ stats }: HeaderProps) {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks"
+              href="https://github.com/panilya/awesome-ai-benchmarks"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
@@ -72,7 +72,7 @@ export default function Header({ stats }: HeaderProps) {
             </a>
             
             <a
-              href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md"
+              href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"

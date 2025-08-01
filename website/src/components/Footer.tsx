@@ -26,7 +26,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks"
+                  href="https://github.com/panilya/awesome-ai-benchmarks"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md"
+                  href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
@@ -49,7 +49,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks/issues"
+                  href="https://github.com/panilya/awesome-ai-benchmarks/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks/blob/main/LICENSE"
+                  href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
@@ -81,7 +81,7 @@ export default function Footer() {
               <li>Multimodal</li>
               <li>
                 <a
-                  href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md#adding-new-categories"
+                  href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md#adding-new-categories"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -112,7 +112,7 @@ export default function Footer() {
           <div className="mt-4 text-center text-xs text-gray-500">
             Data sourced from community contributions. 
             <a 
-              href="https://github.com/awesome-ai-benchmarks/awesome-ai-benchmarks/blob/main/README.md"
+              href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/README.md"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 ml-1"
