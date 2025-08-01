@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.env*.local
+dist/
+*.log
+.DS_Store
+.vercel
+out/
+build/
+coverage/
+.nyc_output/
+temp/
+.cache/
+.idea
+.claude

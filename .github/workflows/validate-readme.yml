@@ -1,0 +1,110 @@
+name: Validate README
+
+on:
+  pull_request:
+    paths: [ 'README.md' ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: website/package-lock.json
+
+    - name: Install dependencies
+      run: |
+        cd website
+        npm ci
+
+    - name: Validate README format
+      id: validate
+      run: |
+        cd website
+        npm run validate 2>&1 | tee validation-output.txt
+        echo "validation_output<<EOF" >> $GITHUB_OUTPUT
+        cat validation-output.txt >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+      continue-on-error: true
+
+    - name: Parse README for preview
+      run: |
+        cd website
+        npm run parse-data
+        echo "📊 **Parsing Results:**" >> parse-results.md
+        echo "" >> parse-results.md
+        node -e "
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('src/data/benchmarks.json', 'utf8'));
+          console.log(\`- Total benchmarks: \${data.totalCount}\`);
+          console.log(\`- Categories: \${data.categories.length}\`);
+          console.log(\`- Last updated: \${data.lastUpdated}\`);
+          console.log('');
+          console.log('**Categories:**');
+          data.categories.forEach(cat => {
+            console.log(\`- \${cat.name} (\${cat.count} benchmarks)\`);
+            cat.subcategories.forEach(sub => {
+              console.log(\`  - \${sub.name} (\${sub.count} benchmarks)\`);
+            });
+          });
+        " >> parse-results.md
+
+    - name: Comment on PR
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          let validationOutput = '';
+          try {
+            validationOutput = fs.readFileSync('website/validation-output.txt', 'utf8');
+          } catch (e) {
+            validationOutput = 'Validation completed successfully ✅';
+          }
+          
+          let parseResults = '';
+          try {
+            parseResults = fs.readFileSync('website/parse-results.md', 'utf8');
+          } catch (e) {
+            parseResults = 'Could not generate parse results';
+          }
+          
+          const body = `## 🔍 README Validation Results
+          
+          ### Validation Status
+          \`\`\`
+          ${validationOutput}
+          \`\`\`
+          
+          ${parseResults}
+          
+          ---
+          
+          💡 **Next Steps:**
+          - If validation passed: Your changes look good! ✅
+          - If validation failed: Please fix the issues above and update your PR
+          - The website will be automatically updated once this PR is merged
+          
+          🌐 **Preview:** Once merged, changes will be live at [awesome-ai-benchmarks.vercel.app](https://awesome-ai-benchmarks.vercel.app)
+          `;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: body
+          });
+
+    - name: Check validation result
+      run: |
+        cd website
+        npm run validate

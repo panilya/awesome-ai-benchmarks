@@ -1,0 +1,117 @@
+name: Build and Deploy Website
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'README.md', 'website/**' ]
+  workflow_dispatch:
+
+jobs:
+  validate-and-parse:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.changes.outputs.deploy }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: website/package-lock.json
+
+    - name: Install dependencies
+      run: |
+        cd website
+        npm ci
+
+    - name: Validate README format
+      run: |
+        cd website
+        npm run validate
+
+    - name: Parse README to JSON
+      run: |
+        cd website
+        npm run parse-data
+
+    - name: Check for changes
+      id: changes
+      run: |
+        if git diff --quiet HEAD~1 -- README.md website/public/data/benchmarks.json; then
+          echo "deploy=false" >> $GITHUB_OUTPUT
+        else
+          echo "deploy=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit updated data files
+      if: steps.changes.outputs.deploy == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add website/public/data/benchmarks.json
+        git diff --staged --quiet || git commit -m "🤖 Update benchmark data from README.md
+
+        Co-Authored-By: GitHub Actions <action@github.com>"
+
+    - name: Push changes
+      if: steps.changes.outputs.deploy == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+
+  build-and-deploy:
+    needs: validate-and-parse
+    if: needs.validate-and-parse.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: website/package-lock.json
+
+    - name: Install dependencies
+      run: |
+        cd website
+        npm ci
+
+    - name: Build website
+      run: |
+        cd website
+        npm run build
+      env:
+        NODE_ENV: production
+
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.ORG_ID}}
+        vercel-project-id: ${{ secrets.PROJECT_ID}}
+        working-directory: website
+        vercel-args: '--prod'
+
+  notify-success:
+    needs: [validate-and-parse, build-and-deploy]
+    if: always() && needs.build-and-deploy.result == 'success'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Notify deployment success
+      run: |
+        echo "✅ Website successfully deployed!"
+        echo "🌐 Visit: https://awesome-ai-benchmarks.vercel.app"

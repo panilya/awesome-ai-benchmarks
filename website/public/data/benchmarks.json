@@ -1,0 +1,254 @@
+{
+  "categories": [
+    {
+      "name": "Programming & Code Generation",
+      "subcategories": [
+        {
+          "name": "Code Generation & Evaluation",
+          "benchmarks": [
+            {
+              "name": "LiveCodeBench",
+              "description": "A comprehensive benchmark for evaluating code generation capabilities of large language models on real-world programming tasks",
+              "paper": "https://arxiv.org/abs/2403.07974",
+              "website": "https://livecodebench.github.io/",
+              "year": 2024
+            },
+            {
+              "name": "can-ai-code",
+              "description": "Simple evaluation framework for code generation models with multiple programming languages",
+              "code": "https://github.com/the-crypt-keeper/can-ai-code",
+              "website": "https://huggingface.co/spaces/mike-ravkine/can-ai-code-results",
+              "year": 2024
+            },
+            {
+              "name": "Kotlin-bench",
+              "description": "Benchmark specifically designed for evaluating Kotlin programming capabilities",
+              "website": "https://firebender.com/blog/kotlin-bench",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "API & Tool Usage",
+          "benchmarks": [
+            {
+              "name": "Gorilla",
+              "description": "Large Language Model Connected with Massive APIs for function calling evaluation",
+              "website": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html#bfcl",
+              "year": 2023
+            },
+            {
+              "name": "ToolSandbox",
+              "description": "A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
+              "paper": "https://arxiv.org/abs/2408.04682",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "Terminal & Environment",
+          "benchmarks": [
+            {
+              "name": "terminal-bench",
+              "description": "A benchmark for AI agents in terminal environments",
+              "website": "https://www.tbench.ai",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "Logic & Reasoning",
+          "benchmarks": [
+            {
+              "name": "Sudoku-Bench",
+              "description": "Benchmark testing logical reasoning capabilities through Sudoku puzzle solving",
+              "code": "https://github.com/SakanaAI/Sudoku-Bench",
+              "website": "https://pub.sakana.ai/sudoku/",
+              "year": 2024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Multimodal & Vision",
+      "subcategories": [
+        {
+          "name": "Video Understanding",
+          "benchmarks": [
+            {
+              "name": "LongVideoBench",
+              "description": "A Benchmark for Long-context Interleaved Video-Language Understanding",
+              "paper": "https://arxiv.org/abs/2407.15754",
+              "website": "https://longvideobench.github.io/",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "Multimodal Evaluation",
+          "benchmarks": [
+            {
+              "name": "MLLM-as-a-Judge",
+              "description": "Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark",
+              "paper": "https://arxiv.org/abs/2402.04788",
+              "website": "https://mllm-judge.github.io/",
+              "year": 2024
+            },
+            {
+              "name": "Vision Language Models are Biased",
+              "description": "Benchmark examining bias in vision-language models",
+              "website": "https://vlmsarebiased.github.io/",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "OCR & Document Understanding",
+          "benchmarks": [
+            {
+              "name": "olmOCR-Bench",
+              "description": "Benchmark for evaluating optical character recognition capabilities",
+              "paper": "https://arxiv.org/abs/2502.18443",
+              "code": "https://github.com/allenai/olmocr/tree/main/olmocr/bench",
+              "year": 2025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legal & Domain-Specific",
+      "subcategories": [
+        {
+          "name": "Legal Reasoning",
+          "benchmarks": [
+            {
+              "name": "LEXam",
+              "description": "Benchmarking Legal Reasoning on 340 Law Exams from Swiss, EU, and international law examinations",
+              "paper": "https://arxiv.org/abs/2505.12864",
+              "code": "https://github.com/LEXam-Benchmark/LEXam/tree/main",
+              "year": 2024
+            },
+            {
+              "name": "CaseLaw",
+              "description": "Legal case law analysis and reasoning benchmark",
+              "website": "https://www.vals.ai/benchmarks/case_law-05-09-2025",
+              "year": 2025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Agent Capabilities & Reasoning",
+      "subcategories": [
+        {
+          "name": "Long-term Coherence",
+          "benchmarks": [
+            {
+              "name": "Vending-Bench",
+              "description": "A Benchmark for Long-Term Coherence of Autonomous Agents",
+              "paper": "https://arxiv.org/pdf/2502.15840",
+              "website": "https://andonlabs.com/evals/vending-bench",
+              "year": 2025
+            }
+          ]
+        },
+        {
+          "name": "Scientific & Academic Reasoning",
+          "benchmarks": [
+            {
+              "name": "OlympiadBench",
+              "description": "A Challenging Benchmark for Promoting AGI with Olympiad-Level Bilingual Multimodal Scientific Problems",
+              "paper": "https://arxiv.org/pdf/2402.14008",
+              "code": "https://github.com/OpenBMB/OlympiadBench",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "Security & Robustness",
+          "benchmarks": [
+            {
+              "name": "JailbreakBench",
+              "description": "An Open Robustness Benchmark for Jailbreaking Large Language Models",
+              "paper": "https://arxiv.org/abs/2404.01318",
+              "website": "https://jailbreakbench.github.io",
+              "year": 2024
+            },
+            {
+              "name": "SnitchBench",
+              "description": "Benchmark for evaluating model safety and information leakage",
+              "website": "https://snitchbench.t3.gg/",
+              "code": "https://github.com/t3dotgg/SnitchBench",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "Business & CRM",
+          "benchmarks": [
+            {
+              "name": "CRMArena-Pro",
+              "description": "Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions",
+              "paper": "https://arxiv.org/abs/2505.18878",
+              "website": "https://www.salesforce.com/blog/crmarena-pro/",
+              "year": 2025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Creative & Evaluation",
+      "subcategories": [
+        {
+          "name": "Memory & Episodic Tasks",
+          "benchmarks": [
+            {
+              "name": "Episodic Memories Generation and Evaluation Benchmark",
+              "description": "Benchmark for Large Language Models memory capabilities",
+              "paper": "https://arxiv.org/abs/2501.13121",
+              "year": 2025
+            }
+          ]
+        },
+        {
+          "name": "Creative Writing",
+          "benchmarks": [
+            {
+              "name": "Longform Creative Writing",
+              "description": "Benchmark for evaluating long-form creative writing capabilities",
+              "website": "https://eqbench.com/creative_writing_longform.html",
+              "year": 2024
+            },
+            {
+              "name": "Creative Writing v3",
+              "description": "Enhanced creative writing evaluation benchmark",
+              "website": "https://eqbench.com/creative_writing.html",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "name": "Judgment & Analysis",
+          "benchmarks": [
+            {
+              "name": "Judgemark v2",
+              "description": "Benchmark for evaluating judgment and decision-making capabilities",
+              "website": "https://eqbench.com/judgemark-v2.html",
+              "year": 2024
+            },
+            {
+              "name": "BuzzBench",
+              "description": "Humor analysis benchmark for evaluating understanding of comedy and wit",
+              "website": "https://eqbench.com/buzzbench.html",
+              "year": 2024
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
