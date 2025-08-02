@@ -14,6 +14,33 @@
               "year": 2024
             },
             {
+              "name": "HumanEval",
+              "description": "Evaluating Large Language Models Trained on Code",
+              "code": "https://github.com/openai/human-eval",
+              "paper": "https://arxiv.org/abs/2107.03374",
+              "year": 2021
+            },
+            {
+              "name": "BigCodeBench",
+              "description": "Comprehensive benchmark for code generation and understanding",
+              "paper": "https://openreview.net/forum?id=YrycTjllL0",
+              "website": "https://bigcode-bench.github.io/",
+              "year": 2024
+            },
+            {
+              "name": "SciCode",
+              "description": "A Research Coding Benchmark Curated by Scientists",
+              "website": "https://scicode-bench.github.io/",
+              "paper": "https://arxiv.org/abs/2407.13168",
+              "year": 2024
+            },
+            {
+              "name": "Aider Polyglot",
+              "description": "Multilingual coding benchmark for AI assistants",
+              "website": "https://aider.chat/2024/12/21/polyglot.html#the-polyglot-benchmark",
+              "year": 2024
+            },
+            {
               "name": "can-ai-code",
               "description": "Simple evaluation framework for code generation models with multiple programming languages",
               "code": "https://github.com/the-crypt-keeper/can-ai-code",
@@ -24,7 +51,8 @@
               "name": "Kotlin-bench",
               "description": "Benchmark specifically designed for evaluating Kotlin programming capabilities",
               "website": "https://firebender.com/blog/kotlin-bench",
-              "year": 2024
+              "code": "https://github.com/firebenders/Kotlin-bench",
+              "year": 2025
             }
           ]
         },
@@ -35,13 +63,29 @@
               "name": "Gorilla",
               "description": "Large Language Model Connected with Massive APIs for function calling evaluation",
               "website": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html#bfcl",
-              "year": 2023
+              "code": "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
+              "year": 2024
             },
             {
               "name": "ToolSandbox",
               "description": "A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
               "paper": "https://arxiv.org/abs/2408.04682",
+              "code": "https://github.com/apple/ToolSandbox",
               "year": 2024
+            },
+            {
+              "name": "τ-bench",
+              "description": "A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+              "paper": "https://arxiv.org/abs/2406.12045",
+              "code": "https://github.com/sierra-research/tau-bench",
+              "year": 2024
+            },
+            {
+              "name": "τ²-bench",
+              "description": "Evaluating Conversational Agents in a Dual-Control Environment",
+              "paper": "https://arxiv.org/abs/2506.07982",
+              "code": "https://github.com/sierra-research/tau2-bench",
+              "year": 2025
             }
           ]
         },
@@ -52,7 +96,8 @@
               "name": "terminal-bench",
               "description": "A benchmark for AI agents in terminal environments",
               "website": "https://www.tbench.ai",
-              "year": 2024
+              "code": "https://github.com/laude-institute/terminal-bench",
+              "year": 2025
             }
           ]
         },
@@ -64,6 +109,39 @@
               "description": "Benchmark testing logical reasoning capabilities through Sudoku puzzle solving",
               "code": "https://github.com/SakanaAI/Sudoku-Bench",
               "website": "https://pub.sakana.ai/sudoku/",
+              "paper": "https://arxiv.org/abs/2505.16135",
+              "year": 2025
+            },
+            {
+              "name": "Tests as Prompt",
+              "description": "A Test-Driven-Development Benchmark for LLM Code Generation",
+              "paper": "https://arxiv.org/abs/2505.09027",
+              "year": 2025
+            },
+            {
+              "name": "Web-Bench",
+              "description": "A LLM Code Benchmark Based on Web Standards and Frameworks",
+              "code": "https://github.com/bytedance/web-bench",
+              "paper": "https://arxiv.org/abs/2505.07473",
+              "website": "https://huggingface.co/spaces/bytedance-research/Web-Bench-Leaderboard",
+              "year": 2025
+            },
+            {
+              "name": "KernelBench",
+              "description": "Can LLMs Write GPU Kernels?",
+              "website": "https://scalingintelligence.stanford.edu/blogs/kernelbench/",
+              "year": 2025
+            }
+          ]
+        },
+        {
+          "name": "Database & Query",
+          "benchmarks": [
+            {
+              "name": "CypherBench",
+              "description": "Towards Precise Retrieval over Full-scale Modern Knowledge Graphs in the LLM Era",
+              "code": "https://github.com/megagonlabs/cypherbench",
+              "paper": "https://arxiv.org/abs/2412.18702",
               "year": 2024
             }
           ]
@@ -82,6 +160,52 @@
               "paper": "https://arxiv.org/abs/2407.15754",
               "website": "https://longvideobench.github.io/",
               "year": 2024
+            },
+            {
+              "name": "Video-MME",
+              "description": "The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+              "paper": "https://arxiv.org/pdf/2405.21075",
+              "website": "https://video-mme.github.io/home_page.html",
+              "code": "https://github.com/MME-Benchmarks/Video-MME",
+              "year": 2025
+            },
+            {
+              "name": "MLVU",
+              "description": "Multi-task Long Video Understanding Benchmark",
+              "code": "https://github.com/JUNJIE99/MLVU",
+              "paper": "https://arxiv.org/abs/2406.04264",
+              "year": 2024
+            },
+            {
+              "name": "Physics IQ Benchmark",
+              "description": "Do generative video models understand physical principles?",
+              "website": "https://physics-iq.github.io/",
+              "paper": "https://arxiv.org/abs/2501.09038",
+              "code": "https://github.com/google-deepmind/physics-IQ-benchmark",
+              "year": 2025
+            },
+            {
+              "name": "VBench",
+              "description": "Comprehensive Benchmark Suite for Video Generative Models",
+              "website": "https://vchitect.github.io/VBench-project/",
+              "code": "https://github.com/Vchitect/VBench",
+              "year": 2024
+            },
+            {
+              "name": "VBench-2.0",
+              "description": "Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness",
+              "code": "https://github.com/Vchitect/VBench/tree/master/VBench-2.0",
+              "website": "https://vchitect.github.io/VBench-2.0-project/",
+              "paper": "https://arxiv.org/abs/2503.21755",
+              "year": 2025
+            },
+            {
+              "name": "FAVOR-Bench",
+              "description": "A Comprehensive Benchmark for Fine-Grained Video Motion Understanding",
+              "website": "https://favor-bench.github.io/",
+              "paper": "https://arxiv.org/abs/2503.14935",
+              "code": "https://github.com/FAVOR-Bench/FAVOR-Bench",
+              "year": 2025
             }
           ]
         },
@@ -93,19 +217,63 @@
               "description": "Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark",
               "paper": "https://arxiv.org/abs/2402.04788",
               "website": "https://mllm-judge.github.io/",
+              "code": "https://github.com/Dongping-Chen/MLLM-Judge",
               "year": 2024
             },
             {
               "name": "Vision Language Models are Biased",
               "description": "Benchmark examining bias in vision-language models",
               "website": "https://vlmsarebiased.github.io/",
-              "year": 2024
+              "paper": "https://arxiv.org/abs/2505.23941",
+              "code": "https://github.com/anvo25/vlms-are-biased",
+              "year": 2025
+            },
+            {
+              "name": "ManipBench",
+              "description": "Benchmarking Vision-Language Models for Low-Level Robot Manipulation",
+              "website": "https://manipbench.github.io/",
+              "paper": "https://arxiv.org/abs/2505.09698",
+              "year": 2025
+            },
+            {
+              "name": "ENIGMAEVAL",
+              "description": "A Benchmark of Long Multimodal Reasoning Challenges",
+              "paper": "https://arxiv.org/pdf/2502.08859",
+              "year": 2025
+            },
+            {
+              "name": "VisuLogic",
+              "description": "A Benchmark for Evaluating Visual Reasoning in Multi-modal Large Language Models",
+              "website": "https://visulogic-benchmark.github.io/VisuLogic/#",
+              "paper": "https://arxiv.org/abs/2504.15279",
+              "year": 2025
+            },
+            {
+              "name": "PHYBench",
+              "description": "Holistic Evaluation of Physical Perception and Reasoning in Large Language Models",
+              "website": "https://phybench-official.github.io/phybench-demo/",
+              "paper": "https://arxiv.org/abs/2504.16074",
+              "year": 2025
+            },
+            {
+              "name": "EmbodiedBench",
+              "description": "Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+              "website": "https://embodiedbench.github.io/",
+              "paper": "https://arxiv.org/abs/2502.09560",
+              "year": 2025
             }
           ]
         },
         {
           "name": "OCR & Document Understanding",
           "benchmarks": [
+            {
+              "name": "Intelligent Document Processing (IDP) Leaderboard",
+              "description": "Comprehensive evaluation of document processing capabilities",
+              "website": "https://idp-leaderboard.org/",
+              "code": "https://github.com/NanoNets/docext",
+              "year": 2025
+            },
             {
               "name": "olmOCR-Bench",
               "description": "Benchmark for evaluating optical character recognition capabilities",
@@ -128,12 +296,26 @@
               "description": "Benchmarking Legal Reasoning on 340 Law Exams from Swiss, EU, and international law examinations",
               "paper": "https://arxiv.org/abs/2505.12864",
               "code": "https://github.com/LEXam-Benchmark/LEXam/tree/main",
-              "year": 2024
+              "year": 2025
             },
             {
               "name": "CaseLaw",
               "description": "Legal case law analysis and reasoning benchmark",
               "website": "https://www.vals.ai/benchmarks/case_law-05-09-2025",
+              "year": 2025
+            },
+            {
+              "name": "WorldView-Bench",
+              "description": "A Benchmark for Evaluating Global Cultural Perspectives in Large Language Models",
+              "paper": "https://arxiv.org/abs/2505.09595",
+              "year": 2025
+            },
+            {
+              "name": "Spider 2.0",
+              "description": "Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+              "website": "https://spider2-sql.github.io/",
+              "paper": "https://arxiv.org/abs/2411.07763",
+              "code": "https://github.com/xlang-ai/Spider2",
               "year": 2025
             }
           ]
@@ -144,13 +326,54 @@
       "name": "Agent Capabilities & Reasoning",
       "subcategories": [
         {
+          "name": "Swarm Intelligence",
+          "benchmarks": [
+            {
+              "name": "SwarmBench",
+              "description": "Benchmarking LLMs' Swarm Intelligence",
+              "code": "https://github.com/RUC-GSAI/YuLan-SwarmIntell",
+              "paper": "https://arxiv.org/abs/2505.04364",
+              "year": 2025
+            },
+            {
+              "name": "Realistic Evaluations for Agents Leaderboard (REAL)",
+              "description": "Comprehensive agent evaluation framework",
+              "website": "https://www.realevals.xyz/",
+              "paper": "https://arxiv.org/abs/2504.11543",
+              "year": 2025
+            }
+          ]
+        },
+        {
           "name": "Long-term Coherence",
           "benchmarks": [
             {
               "name": "Vending-Bench",
               "description": "A Benchmark for Long-Term Coherence of Autonomous Agents",
-              "paper": "https://arxiv.org/pdf/2502.15840",
               "website": "https://andonlabs.com/evals/vending-bench",
+              "paper": "https://arxiv.org/pdf/2502.15840",
+              "year": 2025
+            },
+            {
+              "name": "SUPER",
+              "description": "Evaluating Agents on Setting Up and Executing Tasks from Research Repositories",
+              "code": "https://github.com/allenai/super-benchmark",
+              "paper": "https://arxiv.org/abs/2409.07440",
+              "year": 2024
+            },
+            {
+              "name": "TravelPlanner",
+              "description": "A Benchmark for Real-World Planning with Language Agents",
+              "paper": "https://arxiv.org/abs/2402.01622",
+              "website": "https://osu-nlp-group.github.io/TravelPlanner/",
+              "code": "https://github.com/OSU-NLP-Group/TravelPlanner",
+              "year": 2024
+            },
+            {
+              "name": "LongProc",
+              "description": "Benchmarking Long-Context Language Models on Long Procedural Generation",
+              "website": "https://princeton-pli.github.io/LongProc/",
+              "paper": "https://arxiv.org/pdf/2501.05414",
               "year": 2025
             }
           ]
@@ -164,6 +387,189 @@
               "paper": "https://arxiv.org/pdf/2402.14008",
               "code": "https://github.com/OpenBMB/OlympiadBench",
               "year": 2024
+            },
+            {
+              "name": "ZebraLogic",
+              "description": "Benchmarking the Logical Reasoning Ability of Language Models",
+              "paper": "https://arxiv.org/abs/2502.01100",
+              "website": "https://huggingface.co/blog/yuchenlin/zebra-logic",
+              "year": 2025
+            },
+            {
+              "name": "TruthfulQA",
+              "description": "Measuring How Models Imitate Human Falsehoods (New version)",
+              "paper": "https://arxiv.org/abs/2109.07958",
+              "code": "https://github.com/sylinrl/TruthfulQA",
+              "year": 2021
+            },
+            {
+              "name": "MathChat",
+              "description": "Benchmarking Mathematical Reasoning and Instruction Following in Multi-Turn Interactions",
+              "code": "https://github.com/Zhenwen-NLP/MathChat",
+              "paper": "https://arxiv.org/abs/2405.19444",
+              "year": 2024
+            },
+            {
+              "name": "MMLU-Pro",
+              "description": "Enhanced version of the Massive Multitask Language Understanding benchmark",
+              "code": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+              "paper": "https://arxiv.org/abs/2406.01574",
+              "year": 2024
+            },
+            {
+              "name": "SuperGPQA",
+              "description": "Scaling LLM Evaluation across 285 Graduate Disciplines",
+              "website": "https://supergpqa.github.io/",
+              "paper": "https://www.arxiv.org/abs/2502.14739",
+              "year": 2025
+            },
+            {
+              "name": "PhysBench",
+              "description": "Benchmarking and Enhancing VLMs for Physical World Understanding",
+              "website": "https://physbench.github.io/",
+              "paper": "https://arxiv.org/abs/2501.16411",
+              "code": "https://github.com/USC-GVL/PhysBench",
+              "year": 2025
+            },
+            {
+              "name": "MATH-Perturb",
+              "description": "Benchmarking LLMs' Math Reasoning Abilities against Hard Perturbations",
+              "website": "https://math-perturb.github.io/",
+              "paper": "https://arxiv.org/abs/2502.06453",
+              "code": "https://github.com/Kaffaljidhmah2/MATH-Perturb",
+              "year": 2025
+            },
+            {
+              "name": "PhD Knowledge Not Required",
+              "description": "A Reasoning Challenge for Large Language Models",
+              "website": "https://huggingface.co/papers/2502.01584",
+              "paper": "https://arxiv.org/abs/2502.01584",
+              "year": 2025
+            },
+            {
+              "name": "Gravity-Bench-v1",
+              "description": "A Benchmark on Gravitational Physics Discovery for Agents",
+              "paper": "https://arxiv.org/abs/2501.18411",
+              "year": 2025
+            },
+            {
+              "name": "MMLU",
+              "description": "Measuring Massive Multitask Language Understanding",
+              "code": "https://github.com/hendrycks/test",
+              "paper": "https://arxiv.org/abs/2009.03300",
+              "year": 2020
+            },
+            {
+              "name": "MATH",
+              "description": "Measuring Mathematical Problem Solving With the MATH Dataset",
+              "code": "https://github.com/hendrycks/math",
+              "paper": "https://arxiv.org/abs/2103.03874",
+              "year": 2021
+            },
+            {
+              "name": "GPQA",
+              "description": "A Graduate-Level Google-Proof Q&A Benchmark",
+              "code": "https://github.com/idavidrein/gpqa/",
+              "paper": "https://arxiv.org/abs/2311.12022",
+              "year": 2023
+            },
+            {
+              "name": "DROP",
+              "description": "A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs",
+              "website": "https://allenai.org/data/drop",
+              "paper": "https://arxiv.org/abs/1903.00161",
+              "year": 2019
+            },
+            {
+              "name": "MGSM",
+              "description": "Multilingual Grade School Math Benchmark (MGSM), Language Models are Multilingual Chain-of-Thought Reasoners",
+              "code": "https://github.com/google-research/url-nlp",
+              "paper": "https://arxiv.org/abs/2210.03057",
+              "year": 2022
+            },
+            {
+              "name": "FrontierMath",
+              "description": "A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+              "website": "https://epoch.ai/frontiermath",
+              "paper": "https://arxiv.org/abs/2411.04872",
+              "year": 2024
+            },
+            {
+              "name": "MuSR",
+              "description": "Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+              "paper": "https://arxiv.org/abs/2310.16049",
+              "year": 2023
+            },
+            {
+              "name": "AIME Benchmark",
+              "description": "American Invitational Mathematics Examination benchmark",
+              "website": "https://www.vals.ai/benchmarks/aime-2025-05-09",
+              "year": 2025
+            },
+            {
+              "name": "Humanity's Last Exam",
+              "description": "Comprehensive evaluation benchmark for advanced AI capabilities",
+              "website": "https://agi.safe.ai/",
+              "paper": "https://arxiv.org/abs/2501.14249",
+              "code": "https://github.com/centerforaisafety/hle",
+              "year": 2025
+            },
+            {
+              "name": "ProcessBench",
+              "description": "Identifying Process Errors in Mathematical Reasoning",
+              "website": "https://huggingface.co/papers/2412.06559",
+              "paper": "https://arxiv.org/abs/2412.06559",
+              "year": 2024
+            },
+            {
+              "name": "SimpleQA",
+              "description": "Measuring short-form factuality in large language models",
+              "website": "https://openai.com/index/introducing-simpleqa",
+              "paper": "https://arxiv.org/abs/2411.04368",
+              "year": 2024
+            },
+            {
+              "name": "BrowseComp",
+              "description": "A Simple Yet Challenging Benchmark for Browsing Agents",
+              "website": "https://openai.com/index/browsecomp",
+              "paper": "https://arxiv.org/abs/2504.12516",
+              "code": "https://github.com/openai/simple-evals",
+              "year": 2025
+            },
+            {
+              "name": "HealthBench",
+              "description": "Evaluating Large Language Models Towards Improved Human Health",
+              "website": "https://openai.com/index/healthbench",
+              "paper": "https://cdn.openai.com/pdf/bd7a39d5-9e9f-47b3-903c-8b847ca650c7/healthbench_paper.pdf",
+              "year": 2025
+            },
+            {
+              "name": "QuestBench",
+              "description": "Can LLMs ask the right question to acquire information in reasoning tasks?",
+              "code": "https://github.com/google-deepmind/questbench",
+              "paper": "https://arxiv.org/abs/2503.22674",
+              "year": 2025
+            },
+            {
+              "name": "MedAgentsBench",
+              "description": "Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning",
+              "code": "https://github.com/gersteinlab/medagents-benchmark",
+              "paper": "https://arxiv.org/abs/2503.07459",
+              "year": 2025
+            },
+            {
+              "name": "Can Language Models Falsify?",
+              "description": "Evaluating Algorithmic Reasoning with Counterexample Creation",
+              "website": "https://falsifiers.github.io/",
+              "paper": "https://arxiv.org/abs/2502.19414",
+              "year": 2025
+            },
+            {
+              "name": "BIG-Bench Extra Hard",
+              "description": "Enhanced version of the BIG-Bench benchmark with more challenging tasks",
+              "code": "https://github.com/google-deepmind/bbeh",
+              "paper": "https://arxiv.org/abs/2502.19187",
+              "year": 2025
             }
           ]
         },
@@ -182,7 +588,13 @@
               "description": "Benchmark for evaluating model safety and information leakage",
               "website": "https://snitchbench.t3.gg/",
               "code": "https://github.com/t3dotgg/SnitchBench",
-              "year": 2024
+              "year": 2025
+            },
+            {
+              "name": "DIF",
+              "description": "A Framework for Benchmarking and Verifying Implicit Bias in LLMs",
+              "paper": "https://arxiv.org/pdf/2505.10013",
+              "year": 2025
             }
           ]
         },
@@ -195,6 +607,90 @@
               "paper": "https://arxiv.org/abs/2505.18878",
               "website": "https://www.salesforce.com/blog/crmarena-pro/",
               "year": 2025
+            },
+            {
+              "name": "CXMArena",
+              "description": "Unified Dataset to benchmark performance in realistic CXM Scenarios",
+              "paper": "https://arxiv.org/abs/2505.09436",
+              "year": 2025
+            }
+          ]
+        },
+        {
+          "name": "World Modeling & Simulation",
+          "benchmarks": [
+            {
+              "name": "Text2World",
+              "description": "Benchmarking Large Language Models for Symbolic World Model Generation",
+              "website": "https://text-to-world.github.io/",
+              "paper": "https://arxiv.org/abs/2502.13092",
+              "code": "https://github.com/Aaron617/text2world",
+              "year": 2025
+            }
+          ]
+        },
+        {
+          "name": "Game & Interactive",
+          "benchmarks": [
+            {
+              "name": "LLMs Battle Snake",
+              "description": "Game-based evaluation using Snake gameplay",
+              "website": "https://snakebench.com/",
+              "year": 2025
+            },
+            {
+              "name": "ARC-AGI-1",
+              "description": "Abstraction and Reasoning Corpus for Artificial General Intelligence",
+              "code": "https://github.com/fchollet/arc-agi",
+              "paper": "https://arxiv.org/abs/1911.01547",
+              "year": 2019
+            },
+            {
+              "name": "ARC-AGI-2",
+              "description": "A New Challenge for Frontier AI Reasoning Systems",
+              "paper": "https://arxiv.org/abs/2505.11831",
+              "website": "https://arcprize.org/arc-agi/2/",
+              "code": "https://github.com/arcprize/ARC-AGI-2",
+              "year": 2025
+            },
+            {
+              "name": "Factorio Learning Environment",
+              "description": "Complex game environment for AI agent training and evaluation",
+              "website": "https://jackhopkins.github.io/factorio-learning-environment/",
+              "paper": "https://arxiv.org/abs/2503.09617",
+              "year": 2025
+            },
+            {
+              "name": "Balrog",
+              "description": "Benchmarking Agentic LLM and VLM Reasoning On Games",
+              "website": "https://balrogai.com/",
+              "paper": "https://arxiv.org/abs/2411.13543",
+              "year": 2024
+            },
+            {
+              "name": "WeirdML Benchmark v1 (Archived)",
+              "description": "Unconventional machine learning challenges",
+              "website": "https://htihle.github.io/weirdml_v1.html",
+              "year": 2024
+            },
+            {
+              "name": "WeirdML Benchmark v2",
+              "description": "Unconventional machine learning challenges",
+              "website": "https://htihle.github.io/weirdml.html",
+              "year": 2025
+            },
+            {
+              "name": "PokerBench",
+              "description": "Training Large Language Models to become Professional Poker Players",
+              "code": "https://github.com/pokerllm/pokerbench",
+              "paper": "https://www.arxiv.org/abs/2501.08328",
+              "year": 2025
+            },
+            {
+              "name": "GameArena",
+              "description": "Evaluating LLM Reasoning through Live Computer Games",
+              "paper": "https://arxiv.org/abs/2412.06394",
+              "year": 2024
             }
           ]
         }
@@ -207,9 +703,10 @@
           "name": "Memory & Episodic Tasks",
           "benchmarks": [
             {
-              "name": "Episodic Memories Generation and Evaluation Benchmark",
+              "name": "Evaluating Episodic Memory in Large Language Models",
               "description": "Benchmark for Large Language Models memory capabilities",
               "paper": "https://arxiv.org/abs/2501.13121",
+              "code": "https://github.com/ahstat/episodic-memory-benchmark",
               "year": 2025
             }
           ]
@@ -235,6 +732,12 @@
           "name": "Judgment & Analysis",
           "benchmarks": [
             {
+              "name": "EQ-Bench 3",
+              "description": "Emotional Intelligence Benchmarks for LLMs",
+              "website": "https://eqbench.com/",
+              "year": 2024
+            },
+            {
               "name": "Judgemark v2",
               "description": "Benchmark for evaluating judgment and decision-making capabilities",
               "website": "https://eqbench.com/judgemark-v2.html",
@@ -245,6 +748,20 @@
               "description": "Humor analysis benchmark for evaluating understanding of comedy and wit",
               "website": "https://eqbench.com/buzzbench.html",
               "year": 2024
+            },
+            {
+              "name": "RealCritic",
+              "description": "Towards Effectiveness-Driven Evaluation of Language Model Critiques",
+              "code": "https://github.com/tangzhy/RealCritic",
+              "paper": "https://arxiv.org/abs/2501.14492",
+              "year": 2025
+            },
+            {
+              "name": "PRMBench",
+              "description": "A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
+              "code": "https://github.com/ssmisya/PRMBench",
+              "paper": "https://arxiv.org/abs/2501.03124",
+              "year": 2025
             }
           ]
         }
