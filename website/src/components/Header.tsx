@@ -90,7 +90,18 @@ export default function Header({ stats }: HeaderProps) {
           <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
             <div className="flex items-center gap-2">
               <TrendingUp size={16} />
-              <span>Latest: {stats.yearRange[1]}</span>
+              <a 
+                href="https://github.com/panilya/awesome-ai-benchmarks/commits/main/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-300 transition-colors duration-200"
+              >
+                Updated: {stats.lastUpdated ? new Date(stats.lastUpdated).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric'
+                }) : 'N/A'}
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <span>Popular tags:</span>

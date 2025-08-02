@@ -32,6 +32,9 @@ function main() {
     console.log('Parsing markdown content...');
     const jsonResult = parseMarkdownToJSON(markdownContent);
 
+    // Add datetime when the script was run
+    jsonResult.lastUpdated = new Date().toISOString();
+
     // Create output directory if it doesn't exist
     const outputDir = path.dirname(outputPath);
     if (!fs.existsSync(outputDir)) {

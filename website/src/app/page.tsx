@@ -132,6 +132,7 @@ export default function HomePage() {
         benchmarksWithCode: 0,
         benchmarksWithWebsite: 0,
         topCategory: { name: 'N/A', count: 0 },
+        lastUpdated: '',
       };
     }
 
@@ -167,6 +168,7 @@ export default function HomePage() {
       benchmarksWithCode,
       benchmarksWithWebsite,
       topCategory,
+      lastUpdated: benchmarkData.lastUpdated || '',
     };
   }, [benchmarkData]);
 

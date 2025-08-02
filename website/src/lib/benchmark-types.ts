@@ -51,4 +51,5 @@ export interface BenchmarkStats {
   benchmarksWithCode: number;
   benchmarksWithWebsite: number;
   topCategory: { name: string; count: number };
+  lastUpdated: string;
 }
