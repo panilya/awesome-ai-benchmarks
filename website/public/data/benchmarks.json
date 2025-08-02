@@ -11,14 +11,28 @@
               "description": "A comprehensive benchmark for evaluating code generation capabilities of large language models on real-world programming tasks",
               "paper": "https://arxiv.org/abs/2403.07974",
               "website": "https://livecodebench.github.io/",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "code generation",
+                "programming",
+                "evaluation",
+                "real-world",
+                "large-scale"
+              ]
             },
             {
               "name": "HumanEval",
               "description": "Evaluating Large Language Models Trained on Code",
               "code": "https://github.com/openai/human-eval",
               "paper": "https://arxiv.org/abs/2107.03374",
-              "year": 2021
+              "year": 2021,
+              "tags": [
+                "code generation",
+                "programming",
+                "python",
+                "evaluation",
+                "function synthesis"
+              ]
             },
             {
               "name": "BigCodeBench",
@@ -26,7 +40,14 @@
               "paper": "https://openreview.net/forum?id=YrycTjllL0",
               "website": "https://bigcode-bench.github.io/",
               "leaderboard": "https://bigcode-bench.github.io/",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "code generation",
+                "programming",
+                "large-scale",
+                "comprehensive",
+                "multilingual"
+              ]
             },
             {
               "name": "SciCode",
@@ -34,21 +55,42 @@
               "website": "https://scicode-bench.github.io/",
               "paper": "https://arxiv.org/abs/2407.13168",
               "leaderboard": "https://scicode-bench.github.io/#experiment-results",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "code generation",
+                "scientific",
+                "research",
+                "domain-specific",
+                "challenging"
+              ]
             },
             {
               "name": "Aider Polyglot",
               "description": "Multilingual coding benchmark for AI assistants",
               "website": "https://aider.chat/2024/12/21/polyglot.html#the-polyglot-benchmark",
               "leaderboard": "https://aider.chat/docs/leaderboards/",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "code generation",
+                "multilingual",
+                "programming",
+                "ai assistants",
+                "polyglot"
+              ]
             },
             {
               "name": "can-ai-code",
               "description": "Simple evaluation framework for code generation models with multiple programming languages",
               "code": "https://github.com/the-crypt-keeper/can-ai-code",
               "website": "https://huggingface.co/spaces/mike-ravkine/can-ai-code-results",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "code generation",
+                "evaluation",
+                "multilingual",
+                "programming",
+                "framework"
+              ]
             },
             {
               "name": "Kotlin-bench",
@@ -56,7 +98,14 @@
               "website": "https://firebender.com/blog/kotlin-bench",
               "leaderboard": "https://firebender.com/leaderboard",
               "code": "https://github.com/firebenders/Kotlin-bench",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "code generation",
+                "kotlin",
+                "programming",
+                "domain-specific",
+                "android"
+              ]
             }
           ]
         },
@@ -69,14 +118,28 @@
               "website": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html#bfcl",
               "leaderboard": "https://gorilla.cs.berkeley.edu/leaderboard.html",
               "code": "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "function calling",
+                "api usage",
+                "tool usage",
+                "evaluation",
+                "large-scale"
+              ]
             },
             {
               "name": "ToolSandbox",
               "description": "A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
               "paper": "https://arxiv.org/abs/2408.04682",
               "code": "https://github.com/apple/ToolSandbox",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "tool usage",
+                "conversational",
+                "interactive",
+                "stateful",
+                "evaluation"
+              ]
             },
             {
               "name": "τ-bench",
@@ -84,14 +147,28 @@
               "paper": "https://arxiv.org/abs/2406.12045",
               "leaderboard": "https://github.com/sierra-research/tau-bench?tab=readme-ov-file#leaderboard",
               "code": "https://github.com/sierra-research/tau-bench",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "tool usage",
+                "agent interaction",
+                "real-world",
+                "user interaction",
+                "domains"
+              ]
             },
             {
               "name": "τ²-bench",
               "description": "Evaluating Conversational Agents in a Dual-Control Environment",
               "paper": "https://arxiv.org/abs/2506.07982",
               "code": "https://github.com/sierra-research/tau2-bench",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "conversational agents",
+                "dual-control",
+                "evaluation",
+                "agent interaction",
+                "environment"
+              ]
             }
           ]
         },
@@ -104,7 +181,14 @@
               "website": "https://www.tbench.ai",
               "leaderboard": "https://www.tbench.ai/leaderboard",
               "code": "https://github.com/laude-institute/terminal-bench",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "terminal",
+                "command line",
+                "agent interaction",
+                "environment",
+                "system administration"
+              ]
             }
           ]
         },
@@ -117,13 +201,27 @@
               "code": "https://github.com/SakanaAI/Sudoku-Bench",
               "website": "https://pub.sakana.ai/sudoku/",
               "paper": "https://arxiv.org/abs/2505.16135",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "logical reasoning",
+                "puzzle solving",
+                "constraint satisfaction",
+                "game",
+                "challenging"
+              ]
             },
             {
               "name": "Tests as Prompt",
               "description": "A Test-Driven-Development Benchmark for LLM Code Generation",
               "paper": "https://arxiv.org/abs/2505.09027",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "code generation",
+                "test-driven development",
+                "programming",
+                "software engineering",
+                "testing"
+              ]
             },
             {
               "name": "Web-Bench",
@@ -132,14 +230,29 @@
               "paper": "https://arxiv.org/abs/2505.07473",
               "leaderboard": "https://huggingface.co/spaces/bytedance-research/Web-Bench-Leaderboard",
               "website": "https://huggingface.co/spaces/bytedance-research/Web-Bench-Leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "code generation",
+                "web development",
+                "html",
+                "css",
+                "javascript",
+                "frameworks"
+              ]
             },
             {
               "name": "KernelBench",
               "description": "Can LLMs Write GPU Kernels?",
               "website": "https://scalingintelligence.stanford.edu/blogs/kernelbench/",
               "leaderboard": "https://scalingintelligence.stanford.edu/KernelBenchLeaderboard/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "code generation",
+                "gpu programming",
+                "cuda",
+                "kernel development",
+                "high performance computing"
+              ]
             }
           ]
         },
@@ -151,7 +264,14 @@
               "description": "Towards Precise Retrieval over Full-scale Modern Knowledge Graphs in the LLM Era",
               "code": "https://github.com/megagonlabs/cypherbench",
               "paper": "https://arxiv.org/abs/2412.18702",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "database",
+                "knowledge graphs",
+                "cypher",
+                "query generation",
+                "retrieval"
+              ]
             }
           ]
         }
@@ -169,7 +289,14 @@
               "paper": "https://arxiv.org/abs/2407.15754",
               "website": "https://longvideobench.github.io/",
               "leaderboard": "https://longvideobench.github.io/index.html#leaderboard",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "video understanding",
+                "multimodal",
+                "long-context",
+                "video-language",
+                "challenging"
+              ]
             },
             {
               "name": "Video-MME",
@@ -178,7 +305,14 @@
               "website": "https://video-mme.github.io/home_page.html",
               "code": "https://github.com/MME-Benchmarks/Video-MME",
               "leaderboard": "https://video-mme.github.io/home_page.html#leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "video analysis",
+                "multimodal",
+                "comprehensive",
+                "evaluation",
+                "video-language"
+              ]
             },
             {
               "name": "MLVU",
@@ -186,7 +320,14 @@
               "code": "https://github.com/JUNJIE99/MLVU",
               "paper": "https://arxiv.org/abs/2406.04264",
               "leaderboard": "https://github.com/JUNJIE99/MLVU?tab=readme-ov-file#trophy-mlvu-test-leaderboard",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "video understanding",
+                "multi-task",
+                "long video",
+                "benchmark",
+                "challenging"
+              ]
             },
             {
               "name": "Physics IQ Benchmark",
@@ -195,7 +336,14 @@
               "paper": "https://arxiv.org/abs/2501.09038",
               "code": "https://github.com/google-deepmind/physics-IQ-benchmark",
               "leaderboard": "https://github.com/google-deepmind/physics-IQ-benchmark?tab=readme-ov-file#leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "video generation",
+                "physics",
+                "scientific",
+                "generative models",
+                "physical reasoning"
+              ]
             },
             {
               "name": "VBench",
@@ -203,7 +351,14 @@
               "website": "https://vchitect.github.io/VBench-project/",
               "code": "https://github.com/Vchitect/VBench",
               "leaderboard": "https://huggingface.co/spaces/Vchitect/VBench_Leaderboard",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "video generation",
+                "generative models",
+                "comprehensive",
+                "evaluation",
+                "benchmark suite"
+              ]
             },
             {
               "name": "VBench-2.0",
@@ -211,7 +366,14 @@
               "code": "https://github.com/Vchitect/VBench/tree/master/VBench-2.0",
               "website": "https://vchitect.github.io/VBench-2.0-project/",
               "paper": "https://arxiv.org/abs/2503.21755",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "video generation",
+                "generative models",
+                "faithfulness",
+                "advanced",
+                "evaluation"
+              ]
             },
             {
               "name": "FAVOR-Bench",
@@ -220,7 +382,14 @@
               "paper": "https://arxiv.org/abs/2503.14935",
               "code": "https://github.com/FAVOR-Bench/FAVOR-Bench",
               "leaderboard": "https://favor-bench.github.io/#leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "video understanding",
+                "motion analysis",
+                "fine-grained",
+                "comprehensive",
+                "video motion"
+              ]
             }
           ]
         },
@@ -234,7 +403,14 @@
               "website": "https://mllm-judge.github.io/",
               "code": "https://github.com/Dongping-Chen/MLLM-Judge",
               "leaderboard": "https://mllm-judge.github.io/leaderboard.html",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "multimodal",
+                "vision-language",
+                "evaluation",
+                "judgment",
+                "llm-as-judge"
+              ]
             },
             {
               "name": "Vision Language Models are Biased",
@@ -242,21 +418,42 @@
               "website": "https://vlmsarebiased.github.io/",
               "paper": "https://arxiv.org/abs/2505.23941",
               "code": "https://github.com/anvo25/vlms-are-biased",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "vision-language",
+                "bias evaluation",
+                "fairness",
+                "multimodal",
+                "social bias"
+              ]
             },
             {
               "name": "ManipBench",
               "description": "Benchmarking Vision-Language Models for Low-Level Robot Manipulation",
               "website": "https://manipbench.github.io/",
               "paper": "https://arxiv.org/abs/2505.09698",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "robotics",
+                "manipulation",
+                "vision-language",
+                "low-level control",
+                "embodied ai"
+              ]
             },
             {
               "name": "ENIGMAEVAL",
               "description": "A Benchmark of Long Multimodal Reasoning Challenges",
               "paper": "https://arxiv.org/pdf/2502.08859",
               "leaderboard": "https://scale.com/leaderboard/enigma_eval",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "multimodal reasoning",
+                "long-context",
+                "challenging",
+                "complex reasoning",
+                "evaluation"
+              ]
             },
             {
               "name": "VisuLogic",
@@ -264,14 +461,28 @@
               "website": "https://visulogic-benchmark.github.io/VisuLogic/#",
               "paper": "https://arxiv.org/abs/2504.15279",
               "leaderboard": "https://visulogic-benchmark.github.io/VisuLogic/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "visual reasoning",
+                "multimodal",
+                "logical reasoning",
+                "visual logic",
+                "challenging"
+              ]
             },
             {
               "name": "PHYBench",
               "description": "Holistic Evaluation of Physical Perception and Reasoning in Large Language Models",
               "website": "https://phybench-official.github.io/phybench-demo/",
               "paper": "https://arxiv.org/abs/2504.16074",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "physical reasoning",
+                "perception",
+                "multimodal",
+                "physics",
+                "scientific"
+              ]
             },
             {
               "name": "EmbodiedBench",
@@ -279,7 +490,14 @@
               "website": "https://embodiedbench.github.io/",
               "paper": "https://arxiv.org/abs/2502.09560",
               "leaderboard": "https://embodiedbench.github.io/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "embodied ai",
+                "multimodal",
+                "vision-driven",
+                "agents",
+                "comprehensive"
+              ]
             }
           ]
         },
@@ -292,7 +510,14 @@
               "website": "https://idp-leaderboard.org/",
               "leaderboard": "https://idp-leaderboard.org/#leaderboard",
               "code": "https://github.com/NanoNets/docext",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "document processing",
+                "ocr",
+                "text extraction",
+                "document understanding",
+                "comprehensive"
+              ]
             },
             {
               "name": "olmOCR-Bench",
@@ -300,7 +525,14 @@
               "paper": "https://arxiv.org/abs/2502.18443",
               "code": "https://github.com/allenai/olmocr/tree/main/olmocr/bench",
               "leaderboard": "https://github.com/allenai/olmocr/tree/main/olmocr/bench#results",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "ocr",
+                "optical character recognition",
+                "text recognition",
+                "document processing",
+                "evaluation"
+              ]
             }
           ]
         }
@@ -317,20 +549,41 @@
               "description": "Benchmarking Legal Reasoning on 340 Law Exams from Swiss, EU, and international law examinations",
               "paper": "https://arxiv.org/abs/2505.12864",
               "code": "https://github.com/LEXam-Benchmark/LEXam/tree/main",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "legal reasoning",
+                "law exams",
+                "domain-specific",
+                "multilingual",
+                "challenging"
+              ]
             },
             {
               "name": "CaseLaw",
               "description": "Legal case law analysis and reasoning benchmark",
               "website": "https://www.vals.ai/benchmarks/case_law-05-09-2025",
               "leaderboard": "https://www.vals.ai/benchmarks/case_law-05-09-2025",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "legal reasoning",
+                "case law",
+                "legal analysis",
+                "domain-specific",
+                "text analysis"
+              ]
             },
             {
               "name": "WorldView-Bench",
               "description": "A Benchmark for Evaluating Global Cultural Perspectives in Large Language Models",
               "paper": "https://arxiv.org/abs/2505.09595",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "cultural perspectives",
+                "global",
+                "multilingual",
+                "bias evaluation",
+                "social understanding"
+              ]
             },
             {
               "name": "Spider 2.0",
@@ -338,7 +591,14 @@
               "website": "https://spider2-sql.github.io/",
               "paper": "https://arxiv.org/abs/2411.07763",
               "code": "https://github.com/xlang-ai/Spider2",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "text-to-sql",
+                "database",
+                "query generation",
+                "enterprise",
+                "real-world"
+              ]
             }
           ]
         }
@@ -355,7 +615,14 @@
               "description": "Benchmarking LLMs' Swarm Intelligence",
               "code": "https://github.com/RUC-GSAI/YuLan-SwarmIntell",
               "paper": "https://arxiv.org/abs/2505.04364",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "swarm intelligence",
+                "multi-agent",
+                "collective intelligence",
+                "agent coordination",
+                "distributed"
+              ]
             },
             {
               "name": "Realistic Evaluations for Agents Leaderboard (REAL)",
@@ -363,7 +630,14 @@
               "website": "https://www.realevals.xyz/",
               "paper": "https://arxiv.org/abs/2504.11543",
               "leaderboard": "https://www.realevals.xyz/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "agent evaluation",
+                "realistic scenarios",
+                "comprehensive",
+                "agent capabilities",
+                "real-world"
+              ]
             }
           ]
         },
@@ -375,7 +649,14 @@
               "description": "A Benchmark for Long-Term Coherence of Autonomous Agents",
               "website": "https://andonlabs.com/evals/vending-bench",
               "paper": "https://arxiv.org/pdf/2502.15840",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "autonomous agents",
+                "long-term coherence",
+                "agent behavior",
+                "consistency",
+                "challenging"
+              ]
             },
             {
               "name": "SUPER",
@@ -383,7 +664,14 @@
               "code": "https://github.com/allenai/super-benchmark",
               "paper": "https://arxiv.org/abs/2409.07440",
               "leaderboard": "https://huggingface.co/spaces/allenai/super_leaderboard",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "agent evaluation",
+                "research repositories",
+                "task execution",
+                "setup",
+                "code understanding"
+              ]
             },
             {
               "name": "TravelPlanner",
@@ -392,7 +680,14 @@
               "website": "https://osu-nlp-group.github.io/TravelPlanner/",
               "leaderboard": "https://huggingface.co/spaces/osunlp/TravelPlannerLeaderboard",
               "code": "https://github.com/OSU-NLP-Group/TravelPlanner",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "planning",
+                "travel planning",
+                "real-world",
+                "language agents",
+                "multi-step reasoning"
+              ]
             },
             {
               "name": "LongProc",
@@ -400,7 +695,14 @@
               "website": "https://princeton-pli.github.io/LongProc/",
               "paper": "https://arxiv.org/pdf/2501.05414",
               "leaderboard": "https://princeton-pli.github.io/LongProc/#leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "long-context",
+                "procedural generation",
+                "long-form generation",
+                "challenging",
+                "text generation"
+              ]
             }
           ]
         },
@@ -413,7 +715,14 @@
               "paper": "https://arxiv.org/pdf/2402.14008",
               "code": "https://github.com/OpenBMB/OlympiadBench",
               "leaderboard": "https://github.com/OpenBMB/OlympiadBench?tab=readme-ov-file#leaderboard",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "scientific reasoning",
+                "olympiad",
+                "challenging",
+                "multimodal",
+                "bilingual"
+              ]
             },
             {
               "name": "ZebraLogic",
@@ -421,21 +730,42 @@
               "paper": "https://arxiv.org/abs/2502.01100",
               "website": "https://huggingface.co/blog/yuchenlin/zebra-logic",
               "leaderboard": "https://huggingface.co/spaces/allenai/ZebraLogic",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "logical reasoning",
+                "constraint satisfaction",
+                "deductive reasoning",
+                "challenging",
+                "puzzle solving"
+              ]
             },
             {
               "name": "TruthfulQA",
               "description": "Measuring How Models Imitate Human Falsehoods (New version)",
               "paper": "https://arxiv.org/abs/2109.07958",
               "code": "https://github.com/sylinrl/TruthfulQA",
-              "year": 2021
+              "year": 2021,
+              "tags": [
+                "truthfulness",
+                "factuality",
+                "misinformation",
+                "evaluation",
+                "bias detection"
+              ]
             },
             {
               "name": "MathChat",
               "description": "Benchmarking Mathematical Reasoning and Instruction Following in Multi-Turn Interactions",
               "code": "https://github.com/Zhenwen-NLP/MathChat",
               "paper": "https://arxiv.org/abs/2405.19444",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "mathematical reasoning",
+                "multi-turn",
+                "conversational",
+                "instruction following",
+                "mathematics"
+              ]
             },
             {
               "name": "MMLU-Pro",
@@ -443,7 +773,14 @@
               "code": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
               "paper": "https://arxiv.org/abs/2406.01574",
               "leaderboard": "https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "multitask learning",
+                "knowledge evaluation",
+                "academic subjects",
+                "comprehensive",
+                "challenging"
+              ]
             },
             {
               "name": "SuperGPQA",
@@ -451,7 +788,14 @@
               "website": "https://supergpqa.github.io/",
               "paper": "https://www.arxiv.org/abs/2502.14739",
               "leaderboard": "https://supergpqa.github.io/#Dataset",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "graduate level",
+                "academic disciplines",
+                "large-scale",
+                "scientific reasoning",
+                "challenging"
+              ]
             },
             {
               "name": "PhysBench",
@@ -460,7 +804,14 @@
               "paper": "https://arxiv.org/abs/2501.16411",
               "code": "https://github.com/USC-GVL/PhysBench",
               "leaderboard": "https://physbench.github.io/#leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "physical world understanding",
+                "vision-language",
+                "physics",
+                "multimodal",
+                "scientific"
+              ]
             },
             {
               "name": "MATH-Perturb",
@@ -469,7 +820,14 @@
               "paper": "https://arxiv.org/abs/2502.06453",
               "code": "https://github.com/Kaffaljidhmah2/MATH-Perturb",
               "leaderboard": "https://math-perturb.github.io/#leaderboard",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "mathematical reasoning",
+                "perturbations",
+                "robustness",
+                "challenging",
+                "mathematics"
+              ]
             },
             {
               "name": "PhD Knowledge Not Required",
@@ -477,41 +835,83 @@
               "website": "https://huggingface.co/papers/2502.01584",
               "paper": "https://arxiv.org/abs/2502.01584",
               "leaderboard": "https://huggingface.co/spaces/nuprl/reasoning-weekly",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "reasoning challenge",
+                "logical reasoning",
+                "accessible knowledge",
+                "challenging",
+                "general reasoning"
+              ]
             },
             {
               "name": "Gravity-Bench-v1",
               "description": "A Benchmark on Gravitational Physics Discovery for Agents",
               "paper": "https://arxiv.org/abs/2501.18411",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "physics",
+                "gravitational physics",
+                "scientific discovery",
+                "agents",
+                "domain-specific"
+              ]
             },
             {
               "name": "MMLU",
               "description": "Measuring Massive Multitask Language Understanding",
               "code": "https://github.com/hendrycks/test",
               "paper": "https://arxiv.org/abs/2009.03300",
-              "year": 2020
+              "year": 2020,
+              "tags": [
+                "multitask learning",
+                "knowledge evaluation",
+                "academic subjects",
+                "comprehensive",
+                "classification"
+              ]
             },
             {
               "name": "MATH",
               "description": "Measuring Mathematical Problem Solving With the MATH Dataset",
               "code": "https://github.com/hendrycks/math",
               "paper": "https://arxiv.org/abs/2103.03874",
-              "year": 2021
+              "year": 2021,
+              "tags": [
+                "mathematical reasoning",
+                "problem solving",
+                "mathematics",
+                "challenging",
+                "step-by-step"
+              ]
             },
             {
               "name": "GPQA",
               "description": "A Graduate-Level Google-Proof Q&A Benchmark",
               "code": "https://github.com/idavidrein/gpqa/",
               "paper": "https://arxiv.org/abs/2311.12022",
-              "year": 2023
+              "year": 2023,
+              "tags": [
+                "graduate level",
+                "scientific reasoning",
+                "challenging",
+                "question answering",
+                "google-proof"
+              ]
             },
             {
               "name": "DROP",
               "description": "A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs",
               "website": "https://allenai.org/data/drop",
               "paper": "https://arxiv.org/abs/1903.00161",
-              "year": 2019
+              "year": 2019,
+              "tags": [
+                "reading comprehension",
+                "discrete reasoning",
+                "numerical reasoning",
+                "text understanding",
+                "challenging"
+              ]
             },
             {
               "name": "MGSM",
@@ -519,28 +919,56 @@
               "code": "https://github.com/google-research/url-nlp",
               "paper": "https://arxiv.org/abs/2210.03057",
               "leaderboard": "https://www.vals.ai/benchmarks/mgsm-2025-05-09",
-              "year": 2022
+              "year": 2022,
+              "tags": [
+                "mathematical reasoning",
+                "multilingual",
+                "grade school math",
+                "chain-of-thought",
+                "mathematics"
+              ]
             },
             {
               "name": "FrontierMath",
               "description": "A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
               "website": "https://epoch.ai/frontiermath",
               "paper": "https://arxiv.org/abs/2411.04872",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "mathematical reasoning",
+                "advanced mathematics",
+                "challenging",
+                "frontier research",
+                "hard"
+              ]
             },
             {
               "name": "MuSR",
               "description": "Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
               "paper": "https://arxiv.org/abs/2310.16049",
               "leaderboard": "https://klu.ai/glossary/musr-eval",
-              "year": 2023
+              "year": 2023,
+              "tags": [
+                "chain-of-thought",
+                "multistep reasoning",
+                "soft reasoning",
+                "challenging",
+                "logical reasoning"
+              ]
             },
             {
               "name": "AIME Benchmark",
               "description": "American Invitational Mathematics Examination benchmark",
               "website": "https://www.vals.ai/benchmarks/aime-2025-05-09",
               "leaderboard": "https://www.vals.ai/benchmarks/aime-2025-05-09",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "mathematical reasoning",
+                "competition mathematics",
+                "challenging",
+                "high school level",
+                "problem solving"
+              ]
             },
             {
               "name": "Humanity's Last Exam",
@@ -549,21 +977,42 @@
               "paper": "https://arxiv.org/abs/2501.14249",
               "code": "https://github.com/centerforaisafety/hle",
               "leaderboard": "https://agi.safe.ai/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "comprehensive evaluation",
+                "advanced ai",
+                "challenging",
+                "multidisciplinary",
+                "hard"
+              ]
             },
             {
               "name": "ProcessBench",
               "description": "Identifying Process Errors in Mathematical Reasoning",
               "website": "https://huggingface.co/papers/2412.06559",
               "paper": "https://arxiv.org/abs/2412.06559",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "mathematical reasoning",
+                "process errors",
+                "error identification",
+                "mathematics",
+                "evaluation"
+              ]
             },
             {
               "name": "SimpleQA",
               "description": "Measuring short-form factuality in large language models",
               "website": "https://openai.com/index/introducing-simpleqa",
               "paper": "https://arxiv.org/abs/2411.04368",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "factuality",
+                "short-form qa",
+                "question answering",
+                "evaluation",
+                "knowledge"
+              ]
             },
             {
               "name": "BrowseComp",
@@ -572,7 +1021,14 @@
               "paper": "https://arxiv.org/abs/2504.12516",
               "code": "https://github.com/openai/simple-evals",
               "leaderboard": "https://github.com/openai/simple-evals?tab=readme-ov-file#benchmark-results",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "browsing agents",
+                "web navigation",
+                "agent capabilities",
+                "challenging",
+                "web interaction"
+              ]
             },
             {
               "name": "HealthBench",
@@ -580,21 +1036,42 @@
               "website": "https://openai.com/index/healthbench",
               "paper": "https://cdn.openai.com/pdf/bd7a39d5-9e9f-47b3-903c-8b847ca650c7/healthbench_paper.pdf",
               "leaderboard": "https://openai.com/index/healthbench/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "medical",
+                "healthcare",
+                "domain-specific",
+                "health evaluation",
+                "clinical reasoning"
+              ]
             },
             {
               "name": "QuestBench",
               "description": "Can LLMs ask the right question to acquire information in reasoning tasks?",
               "code": "https://github.com/google-deepmind/questbench",
               "paper": "https://arxiv.org/abs/2503.22674",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "question generation",
+                "information acquisition",
+                "reasoning",
+                "interactive reasoning",
+                "challenging"
+              ]
             },
             {
               "name": "MedAgentsBench",
               "description": "Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning",
               "code": "https://github.com/gersteinlab/medagents-benchmark",
               "paper": "https://arxiv.org/abs/2503.07459",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "medical reasoning",
+                "healthcare",
+                "agent frameworks",
+                "clinical reasoning",
+                "domain-specific"
+              ]
             },
             {
               "name": "Can Language Models Falsify?",
@@ -602,7 +1079,14 @@
               "website": "https://falsifiers.github.io/",
               "paper": "https://arxiv.org/abs/2502.19414",
               "leaderboard": "https://falsifiers.github.io/#results",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "algorithmic reasoning",
+                "counterexample creation",
+                "logical reasoning",
+                "falsification",
+                "challenging"
+              ]
             },
             {
               "name": "BIG-Bench Extra Hard",
@@ -610,7 +1094,14 @@
               "code": "https://github.com/google-deepmind/bbeh",
               "paper": "https://arxiv.org/abs/2502.19187",
               "leaderboard": "https://github.com/google-deepmind/bbeh/blob/main/leaderboard.md",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "multitask evaluation",
+                "challenging",
+                "comprehensive",
+                "hard tasks",
+                "diverse domains"
+              ]
             }
           ]
         },
@@ -622,20 +1113,41 @@
               "description": "An Open Robustness Benchmark for Jailbreaking Large Language Models",
               "paper": "https://arxiv.org/abs/2404.01318",
               "website": "https://jailbreakbench.github.io",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "security",
+                "robustness",
+                "jailbreaking",
+                "safety evaluation",
+                "adversarial attacks"
+              ]
             },
             {
               "name": "SnitchBench",
               "description": "Benchmark for evaluating model safety and information leakage",
               "website": "https://snitchbench.t3.gg/",
               "code": "https://github.com/t3dotgg/SnitchBench",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "safety evaluation",
+                "information leakage",
+                "security",
+                "privacy",
+                "model safety"
+              ]
             },
             {
               "name": "DIF",
               "description": "A Framework for Benchmarking and Verifying Implicit Bias in LLMs",
               "paper": "https://arxiv.org/pdf/2505.10013",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "bias evaluation",
+                "implicit bias",
+                "fairness",
+                "social bias",
+                "verification"
+              ]
             }
           ]
         },
@@ -647,13 +1159,27 @@
               "description": "Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions",
               "paper": "https://arxiv.org/abs/2505.18878",
               "website": "https://www.salesforce.com/blog/crmarena-pro/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "business scenarios",
+                "crm",
+                "agent evaluation",
+                "customer service",
+                "domain-specific"
+              ]
             },
             {
               "name": "CXMArena",
               "description": "Unified Dataset to benchmark performance in realistic CXM Scenarios",
               "paper": "https://arxiv.org/abs/2505.09436",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "customer experience",
+                "business scenarios",
+                "realistic scenarios",
+                "domain-specific",
+                "cxm"
+              ]
             }
           ]
         },
@@ -666,7 +1192,14 @@
               "website": "https://text-to-world.github.io/",
               "paper": "https://arxiv.org/abs/2502.13092",
               "code": "https://github.com/Aaron617/text2world",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "world modeling",
+                "symbolic reasoning",
+                "world generation",
+                "simulation",
+                "text-to-world"
+              ]
             }
           ]
         },
@@ -678,14 +1211,28 @@
               "description": "Game-based evaluation using Snake gameplay",
               "website": "https://snakebench.com/",
               "leaderboard": "https://snakebench.com/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "game playing",
+                "snake game",
+                "interactive",
+                "real-time decision making",
+                "game ai"
+              ]
             },
             {
               "name": "ARC-AGI-1",
               "description": "Abstraction and Reasoning Corpus for Artificial General Intelligence",
               "code": "https://github.com/fchollet/arc-agi",
               "paper": "https://arxiv.org/abs/1911.01547",
-              "year": 2019
+              "year": 2019,
+              "tags": [
+                "abstraction",
+                "reasoning",
+                "agi",
+                "pattern recognition",
+                "challenging"
+              ]
             },
             {
               "name": "ARC-AGI-2",
@@ -693,7 +1240,14 @@
               "paper": "https://arxiv.org/abs/2505.11831",
               "website": "https://arcprize.org/arc-agi/2/",
               "code": "https://github.com/arcprize/ARC-AGI-2",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "abstraction",
+                "reasoning",
+                "agi",
+                "frontier ai",
+                "challenging"
+              ]
             },
             {
               "name": "Factorio Learning Environment",
@@ -701,7 +1255,14 @@
               "website": "https://jackhopkins.github.io/factorio-learning-environment/",
               "paper": "https://arxiv.org/abs/2503.09617",
               "leaderboard": "https://jackhopkins.github.io/factorio-learning-environment/leaderboard/",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "game environment",
+                "complex planning",
+                "resource management",
+                "strategy game",
+                "agent training"
+              ]
             },
             {
               "name": "Balrog",
@@ -709,35 +1270,70 @@
               "website": "https://balrogai.com/",
               "paper": "https://arxiv.org/abs/2411.13543",
               "leaderboard": "https://balrogai.com/",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "game playing",
+                "agentic reasoning",
+                "multimodal",
+                "vision-language",
+                "game ai"
+              ]
             },
             {
               "name": "WeirdML Benchmark v1 (Archived)",
               "description": "Unconventional machine learning challenges",
               "website": "https://htihle.github.io/weirdml_v1.html",
               "leaderboard": "https://htihle.github.io/weirdml_v1.html#results",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "unconventional",
+                "creative challenges",
+                "archived",
+                "experimental",
+                "diverse tasks"
+              ]
             },
             {
               "name": "WeirdML Benchmark v2",
               "description": "Unconventional machine learning challenges",
               "website": "https://htihle.github.io/weirdml.html",
               "leaderboard": "https://htihle.github.io/weirdml.html#results",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "unconventional",
+                "creative challenges",
+                "experimental",
+                "diverse tasks",
+                "innovative"
+              ]
             },
             {
               "name": "PokerBench",
               "description": "Training Large Language Models to become Professional Poker Players",
               "code": "https://github.com/pokerllm/pokerbench",
               "paper": "https://www.arxiv.org/abs/2501.08328",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "game playing",
+                "poker",
+                "strategic reasoning",
+                "game theory",
+                "decision making"
+              ]
             },
             {
               "name": "GameArena",
               "description": "Evaluating LLM Reasoning through Live Computer Games",
               "paper": "https://arxiv.org/abs/2412.06394",
               "leaderboard": "https://huggingface.co/spaces/lmgame/game_arena_bench",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "game playing",
+                "live games",
+                "computer games",
+                "reasoning evaluation",
+                "interactive"
+              ]
             }
           ]
         }
@@ -755,7 +1351,14 @@
               "paper": "https://arxiv.org/abs/2501.13121",
               "code": "https://github.com/ahstat/episodic-memory-benchmark",
               "leaderboard": "https://github.com/ahstat/episodic-memory-benchmark?tab=readme-ov-file#-ranking-in-context-memory",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "episodic memory",
+                "memory evaluation",
+                "context memory",
+                "cognitive abilities",
+                "challenging"
+              ]
             }
           ]
         },
@@ -766,13 +1369,27 @@
               "name": "Longform Creative Writing",
               "description": "Benchmark for evaluating long-form creative writing capabilities",
               "website": "https://eqbench.com/creative_writing_longform.html",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "creative writing",
+                "long-form generation",
+                "creativity",
+                "text generation",
+                "literary"
+              ]
             },
             {
               "name": "Creative Writing v3",
               "description": "Enhanced creative writing evaluation benchmark",
               "website": "https://eqbench.com/creative_writing.html",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "creative writing",
+                "creativity evaluation",
+                "text generation",
+                "literary",
+                "enhanced"
+              ]
             }
           ]
         },
@@ -783,26 +1400,54 @@
               "name": "EQ-Bench 3",
               "description": "Emotional Intelligence Benchmarks for LLMs",
               "website": "https://eqbench.com/",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "emotional intelligence",
+                "social understanding",
+                "empathy",
+                "human behavior",
+                "psychology"
+              ]
             },
             {
               "name": "Judgemark v2",
               "description": "Benchmark for evaluating judgment and decision-making capabilities",
               "website": "https://eqbench.com/judgemark-v2.html",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "judgment",
+                "decision making",
+                "evaluation",
+                "reasoning",
+                "critical thinking"
+              ]
             },
             {
               "name": "BuzzBench",
               "description": "Humor analysis benchmark for evaluating understanding of comedy and wit",
               "website": "https://eqbench.com/buzzbench.html",
-              "year": 2024
+              "year": 2024,
+              "tags": [
+                "humor analysis",
+                "comedy understanding",
+                "wit evaluation",
+                "social understanding",
+                "creative"
+              ]
             },
             {
               "name": "RealCritic",
               "description": "Towards Effectiveness-Driven Evaluation of Language Model Critiques",
               "code": "https://github.com/tangzhy/RealCritic",
               "paper": "https://arxiv.org/abs/2501.14492",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "critique evaluation",
+                "effectiveness evaluation",
+                "critical analysis",
+                "evaluation methodology",
+                "judgment"
+              ]
             },
             {
               "name": "PRMBench",
@@ -810,12 +1455,19 @@
               "code": "https://github.com/ssmisya/PRMBench",
               "paper": "https://arxiv.org/abs/2501.03124",
               "leaderboard": "https://prmbench.github.io/#leaderboard_test",
-              "year": 2025
+              "year": 2025,
+              "tags": [
+                "reward models",
+                "process-level evaluation",
+                "fine-grained evaluation",
+                "challenging",
+                "rlhf"
+              ]
             }
           ]
         }
       ]
     }
   ],
-  "lastUpdated": "2025-08-02T11:31:02.583Z"
+  "lastUpdated": "2025-08-02T13:57:55.241Z"
 }
