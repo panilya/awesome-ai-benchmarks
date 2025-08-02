@@ -110,7 +110,3 @@ If you have questions about contributing:
 ## 🙏 Recognition
 
 All contributors will be recognized in the project. Thank you for helping make AI benchmarks more accessible to the research community!
-
-## 📄 License
-
-By contributing to this project, you agree that your contributions will be licensed under the MIT License.

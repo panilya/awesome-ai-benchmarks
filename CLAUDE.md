@@ -11,7 +11,7 @@ This is a comprehensive GitHub repository that automatically generates a searcha
 awesome-ai-benchmarks/
 ├── README.md                    # Main benchmark data source
 ├── CONTRIBUTING.md              # Contribution guidelines
-├── LICENSE                      # MIT license
+├── LICENSE                      # AGPL-3.0 license
 ├── .gitignore                   # Git ignore rules
 ├── .github/workflows/           # GitHub Actions
 │   ├── build-and-deploy.yml     # Main deployment workflow
