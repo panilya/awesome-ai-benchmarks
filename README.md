@@ -45,6 +45,8 @@ A curated list of AI benchmarks across various domains including Natural Languag
 
 Visit our automatically generated website for a better browsing experience with search, filtering, and detailed benchmark information.
 
+**🌐 [https://awesome-ai-benchmarks.vercel.app](https://awesome-ai-benchmarks.vercel.app)**
+
 ## 📝 Contributing
 
 We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to add new benchmarks or improve existing entries.
