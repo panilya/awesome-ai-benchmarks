@@ -1,6 +1,6 @@
 # Awesome AI Benchmarks
 
-A curated list of AI benchmarks across various domains including Natural Language Processing, Computer Vision, and Multimodal tasks. This repository automatically generates a searchable website at [awesome-ai-benchmarks.vercel.app](https://awesome-ai-benchmarks.vercel.app) from the benchmark entries below.
+A curated list of AI benchmarks across various domains including Natural Language Processing, Computer Vision, and Multimodal tasks. This repository automatically generates a searchable website at [aibenchmarks.net](https://aibenchmarks.net/) from the benchmark entries below.
 
 ## 📋 Table of Contents
 
@@ -45,7 +45,7 @@ A curated list of AI benchmarks across various domains including Natural Languag
 
 Visit our automatically generated website for a better browsing experience with search, filtering, and detailed benchmark information.
 
-**🌐 [https://awesome-ai-benchmarks.vercel.app](https://awesome-ai-benchmarks.vercel.app)**
+**🌐 [https://aibenchmarks.net](https://aibenchmarks.net/)**
 
 ## 📝 Contributing
 
