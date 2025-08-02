@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       deploy: ${{ steps.changes.outputs.deploy }}
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -69,52 +69,52 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
 
-  build-and-deploy:
-    needs: validate-and-parse
-    if: needs.validate-and-parse.outputs.deploy == 'true'
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        ref: main
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-        cache-dependency-path: website/package-lock.json
-
-    - name: Install dependencies
-      run: |
-        cd website
-        npm ci
-
-    - name: Build website
-      run: |
-        cd website
-        npm run build
-      env:
-        NODE_ENV: production
-
-    - name: Deploy to Vercel
-      uses: amondnet/vercel-action@v25
-      with:
-        vercel-token: ${{ secrets.VERCEL_TOKEN }}
-        vercel-org-id: ${{ secrets.ORG_ID}}
-        vercel-project-id: ${{ secrets.PROJECT_ID}}
-        working-directory: website
-        vercel-args: '--prod'
-
-  notify-success:
-    needs: [validate-and-parse, build-and-deploy]
-    if: always() && needs.build-and-deploy.result == 'success'
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Notify deployment success
-      run: |
-        echo "✅ Website successfully deployed!"
-        echo "🌐 Visit: https://awesome-ai-benchmarks.vercel.app"
+#  build-and-deploy:
+#    needs: validate-and-parse
+#    if: needs.validate-and-parse.outputs.deploy == 'true'
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#    - name: Checkout repository
+#      uses: actions/checkout@v4
+#      with:
+#        ref: main
+#
+#    - name: Setup Node.js
+#      uses: actions/setup-node@v4
+#      with:
+#        node-version: '18'
+#        cache: 'npm'
+#        cache-dependency-path: website/package-lock.json
+#
+#    - name: Install dependencies
+#      run: |
+#        cd website
+#        npm ci
+#
+#    - name: Build website
+#      run: |
+#        cd website
+#        npm run build
+#      env:
+#        NODE_ENV: production
+#
+#    - name: Deploy to Vercel
+#      uses: amondnet/vercel-action@v25
+#      with:
+#        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+#        vercel-org-id: ${{ secrets.ORG_ID}}
+#        vercel-project-id: ${{ secrets.PROJECT_ID}}
+#        working-directory: website
+#        vercel-args: '--prod'
+#
+#  notify-success:
+#    needs: [validate-and-parse, build-and-deploy]
+#    if: always() && needs.build-and-deploy.result == 'success'
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#    - name: Notify deployment success
+#      run: |
+#        echo "✅ Website successfully deployed!"
+#        echo "🌐 Visit: https://awesome-ai-benchmarks.vercel.app"
