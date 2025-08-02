@@ -22,7 +22,7 @@ export default function Header({ stats }: HeaderProps) {
           
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center justify-center">
               <div className="text-2xl md:text-3xl font-bold text-white">
                 {stats.totalBenchmarks}
               </div>
@@ -31,7 +31,7 @@ export default function Header({ stats }: HeaderProps) {
               </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center justify-center">
               <div className="text-2xl md:text-3xl font-bold text-white">
                 {stats.totalCategories}
               </div>
@@ -40,21 +40,21 @@ export default function Header({ stats }: HeaderProps) {
               </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center justify-center">
               <div className="text-2xl md:text-3xl font-bold text-white">
-                {stats.yearRange[1] - stats.yearRange[0] + 1}
+                {stats.totalSubcategories}
               </div>
               <div className="text-blue-100 text-sm">
-                Years Covered
+                Subcategories
               </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="text-2xl md:text-3xl font-bold text-white">
-                {Math.round((stats.benchmarksWithCode / stats.totalBenchmarks) * 100)}%
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center justify-center">
+              <div className="text-lg md:text-xl font-bold text-white leading-tight">
+                {stats.topCategory.name}
               </div>
-              <div className="text-blue-100 text-sm">
-                Have Code
+              <div className="text-blue-100 text-sm mt-1">
+                Top Domain
               </div>
             </div>
           </div>

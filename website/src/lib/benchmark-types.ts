@@ -50,4 +50,5 @@ export interface BenchmarkStats {
   topTags: { tag: string; count: number }[];
   benchmarksWithCode: number;
   benchmarksWithWebsite: number;
+  topCategory: { name: string; count: number };
 }

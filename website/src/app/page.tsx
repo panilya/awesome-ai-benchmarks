@@ -131,6 +131,7 @@ export default function HomePage() {
         topTags: [],
         benchmarksWithCode: 0,
         benchmarksWithWebsite: 0,
+        topCategory: { name: 'N/A', count: 0 },
       };
     }
 
@@ -152,6 +153,11 @@ export default function HomePage() {
       .slice(0, 10)
       .map(([tag, count]) => ({ tag, count }));
 
+    // Calculate top category by count
+    const topCategory = benchmarkData.categories
+      .map(cat => ({ name: cat.name, count: cat.count }))
+      .sort((a, b) => b.count - a.count)[0] || { name: 'N/A', count: 0 };
+
     return {
       totalBenchmarks: benchmarkData.totalCount,
       totalCategories: benchmarkData.categories.length,
@@ -160,6 +166,7 @@ export default function HomePage() {
       topTags,
       benchmarksWithCode,
       benchmarksWithWebsite,
+      topCategory,
     };
   }, [benchmarkData]);
 
