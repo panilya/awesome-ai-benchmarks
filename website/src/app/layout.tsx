@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: 'A curated collection of AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks. Discover and explore the most important benchmarks in artificial intelligence research.',
   keywords: [
     'AI benchmarks',
+    'LLM benchmarks',
     'machine learning',
     'NLP',
     'computer vision',
@@ -72,11 +73,34 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+// Function to get categories from benchmarks.json
+async function getCategories() {
+  try {
+    const fs = await import('fs');
+    const path = await import('path');
+    const filePath = path.join(process.cwd(), 'public/data/benchmarks.json');
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const data = JSON.parse(fileContents);
+    
+    return data.categories.map((category: any) => ({
+      '@type': 'Thing',
+      name: category.name,
+      description: `AI benchmarks for ${category.name.toLowerCase()}`
+    }));
+  } catch (error) {
+    console.error('Failed to load categories:', error);
+    // Fallback to empty array if file can't be read
+    return [];
+  }
+}
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const categories = await getCategories();
+  
   return (
     <html lang="en" className={inter.variable}>
       <head>
@@ -93,8 +117,10 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'Awesome AI Benchmarks',
-              description: 'A curated collection of AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks.',
+              description: 'A curated collection of AI benchmarks across various domains and tasks.',
               url: process.env.SITE_URL || 'https://awesome-ai-benchmarks.vercel.app',
+              about: categories,
+              keywords: ['AI benchmarks', 'LLM benchmarks', 'machine learning', 'artificial intelligence evaluation', 'benchmark datasets', 'AI performance testing', 'LLM performance testing'],
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {

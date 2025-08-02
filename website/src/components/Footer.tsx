@@ -1,8 +1,40 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Github, Heart, ExternalLink } from 'lucide-react';
 
-export default function Footer() {
+interface Category {
+  name: string;
+  subcategories: any[];
+}
+
+interface BenchmarksData {
+  categories: Category[];
+}
+
+interface FooterProps {
+  onCategoryClick?: (category: string) => void;
+}
+
+export default function Footer({ onCategoryClick }: FooterProps = {}) {
+  const [categories, setCategories] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch('/data/benchmarks.json');
+        const data: BenchmarksData = await response.json();
+        const categoryNames = data.categories.map(category => category.name);
+        setCategories(categoryNames);
+      } catch (error) {
+        console.error('Failed to fetch categories:', error);
+        // Fallback to hardcoded categories if fetch fails
+        setCategories(['Natural Language Processing', 'Computer Vision', 'Multimodal']);
+      }
+    };
+
+    fetchCategories();
+  }, []);
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -11,7 +43,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <p className="text-gray-300 mb-4">
-              Awesome AI Benchmarks is a curated collection of AI benchmarks 
+              Awesome AI Benchmarks is a curated collection of AI benchmarks
               automatically generated from a community-maintained repository.
             </p>
             <div className="flex items-center gap-2 text-gray-300">
@@ -19,7 +51,7 @@ export default function Footer() {
               <span>Made with love for the AI research community</span>
             </div>
           </div>
-          
+
           {/* Links Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Links</h3>
@@ -71,14 +103,21 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           {/* Categories Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Categories</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Natural Language Processing</li>
-              <li>Computer Vision</li>
-              <li>Multimodal</li>
+              {categories.map((category, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => onCategoryClick?.(category)}
+                    className="text-left hover:text-white transition-colors cursor-pointer"
+                  >
+                    {category}
+                  </button>
+                </li>
+              ))}
               <li>
                 <a
                   href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md#adding-new-categories"
@@ -92,26 +131,22 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
               © 2025 Awesome AI Benchmarks. Open source under MIT License.
             </div>
-            
+
             <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>Powered by Next.js</span>
-              <span>•</span>
-              <span>Deployed on Vercel</span>
-              <span>•</span>
               <span>Updated automatically</span>
             </div>
           </div>
-          
+
           <div className="mt-4 text-center text-xs text-gray-500">
-            Data sourced from community contributions. 
-            <a 
+            Data sourced from community contributions.
+            <a
               href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/README.md"
               target="_blank"
               rel="noopener noreferrer"

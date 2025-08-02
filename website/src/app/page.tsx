@@ -251,7 +251,10 @@ export default function HomePage() {
         </div>
       </main>
 
-      <Footer />
+      <Footer onCategoryClick={(category) => {
+        handleFiltersChange({ ...filters, category, subcategory: undefined });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }} />
     </>
   );
 }
