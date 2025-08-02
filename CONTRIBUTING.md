@@ -37,6 +37,7 @@ You can include these additional fields:
 ```markdown
   - Code: [URL to code repository]
   - Website: [URL to official website]
+  - Leaderboard: [URL to leaderboard]
   - Metrics: [Evaluation metrics]
   - Tags: [comma-separated tags]
 ```
