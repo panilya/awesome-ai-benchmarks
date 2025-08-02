@@ -2,6 +2,35 @@
 
 A curated list of AI benchmarks across various domains including Natural Language Processing, Computer Vision, and Multimodal tasks. This repository automatically generates a searchable website at [awesome-ai-benchmarks.vercel.app](https://awesome-ai-benchmarks.vercel.app) from the benchmark entries below.
 
+## 📋 Table of Contents
+
+- [📊 Statistics](#-statistics)
+- [🚀 Website](#-website)
+- [📝 Contributing](#-contributing)
+- [📚 Benchmarks](#-benchmarks)
+  - [Programming & Code Generation](#programming--code-generation)
+    - [Code Generation & Evaluation](#code-generation--evaluation)
+    - [API & Tool Usage](#api--tool-usage)
+    - [Terminal & Environment](#terminal--environment)
+    - [Logic & Reasoning](#logic--reasoning)
+  - [Multimodal & Vision](#multimodal--vision)
+    - [Video Understanding](#video-understanding)
+    - [Multimodal Evaluation](#multimodal-evaluation)
+    - [OCR & Document Understanding](#ocr--document-understanding)
+  - [Legal & Domain-Specific](#legal--domain-specific)
+    - [Legal Reasoning](#legal-reasoning)
+  - [Agent Capabilities & Reasoning](#agent-capabilities--reasoning)
+    - [Long-term Coherence](#long-term-coherence)
+    - [Scientific & Academic Reasoning](#scientific--academic-reasoning)
+    - [Security & Robustness](#security--robustness)
+    - [Business & CRM](#business--crm)
+  - [Creative & Evaluation](#creative--evaluation)
+    - [Memory & Episodic Tasks](#memory--episodic-tasks)
+    - [Creative Writing](#creative-writing)
+    - [Judgment & Analysis](#judgment--analysis)
+- [📄 License](#-license)
+- [🤝 Acknowledgments](#-acknowledgments)
+
 ## 📊 Statistics
 
 - **Total Benchmarks**: 23
