@@ -56,7 +56,7 @@ jobs:
       if: steps.changes.outputs.deploy == 'true'
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.name "🚀 BenchmarkBot AI"
         git add website/public/data/benchmarks.json
         git diff --staged --quiet || git commit -m "🤖 Update benchmark data from README.md
 
