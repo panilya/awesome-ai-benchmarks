@@ -10,23 +10,23 @@ interface BenchmarkCardProps {
 
 export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
   return (
-    <div className="group relative bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition-all duration-200 hover:border-blue-300 dark:hover:border-blue-700">
+    <div className="group relative bg-card rounded-lg border border-border p-6 hover:shadow-lg transition-all duration-200 hover:border-primary/50">
       {/* Category Badge */}
       <div className="absolute top-4 right-4">
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">
           {benchmark.category}
         </span>
       </div>
 
       {/* Header */}
       <div className="mb-4 pr-16">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 line-clamp-1">
+        <h3 className="text-xl font-semibold text-card-foreground mb-2 line-clamp-1">
           {benchmark.name}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+        <p className="text-sm text-muted-foreground mb-2">
           {benchmark.subcategory}
         </p>
-        <p className="text-gray-700 dark:text-gray-300 line-clamp-3">
+        <p className="text-card-foreground/80 line-clamp-3">
           {truncateText(benchmark.description, 150)}
         </p>
       </div>
@@ -37,7 +37,7 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
           href={benchmark.paper}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
+          className="inline-flex items-center gap-1.5 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
         >
           <FileText size={14} />
           Paper
@@ -49,7 +49,7 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
             href={benchmark.code}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-300 font-medium transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 font-medium transition-colors"
           >
             <Code size={14} />
             Code
@@ -62,7 +62,7 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
             href={benchmark.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-purple-600 hover:text-purple-800 dark:text-purple-400 dark:hover:text-purple-300 font-medium transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium transition-colors"
           >
             <Globe size={14} />
             Website
@@ -75,7 +75,7 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
             href={benchmark.leaderboard}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-orange-600 hover:text-orange-800 dark:text-orange-400 dark:hover:text-orange-300 font-medium transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 font-medium transition-colors"
           >
             <Trophy size={14} />
             Leaderboard
@@ -87,13 +87,13 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
       {/* Metadata */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
+          <div className="flex items-center gap-1 text-sm text-muted-foreground">
             <Calendar size={14} />
             {benchmark.year}
           </div>
 
           {benchmark.metrics && benchmark.metrics.length > 0 && (
-            <div className="text-sm text-gray-600 dark:text-gray-400">
+            <div className="text-sm text-muted-foreground">
               Metrics: {benchmark.metrics.slice(0, 2).join(', ')}
               {benchmark.metrics.length > 2 && '...'}
             </div>
@@ -103,19 +103,19 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
 
       {/* Tags */}
       {benchmark.tags && benchmark.tags.length > 0 && (
-        <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+        <div className="mt-4 pt-4 border-t border-border">
           <div className="flex items-center gap-2 flex-wrap">
-            <Tag size={14} className="text-gray-400" />
+            <Tag size={14} className="text-muted-foreground" />
             {benchmark.tags.slice(0, 4).map((tag) => (
               <span
                 key={tag}
-                className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-secondary text-secondary-foreground"
               >
                 {tag}
               </span>
             ))}
             {benchmark.tags.length > 4 && (
-              <span className="text-xs text-gray-500 dark:text-gray-400">
+              <span className="text-xs text-muted-foreground">
                 +{benchmark.tags.length - 4} more
               </span>
             )}

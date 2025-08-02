@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -102,7 +103,7 @@ export default async function RootLayout({
   const categories = await getCategories();
   
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -138,10 +139,12 @@ export default async function RootLayout({
           src="//gc.zgo.at/count.js"
         />
       </head>
-      <body className={`${inter.className} antialiased bg-gray-50 dark:bg-gray-900`}>
-        <div className="min-h-screen flex flex-col">
-          {children}
-        </div>
+      <body className={`${inter.className} antialiased bg-secondary text-secondary-foreground`}>
+        <ThemeProvider>
+          <div className="min-h-screen flex flex-col">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

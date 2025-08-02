@@ -2,6 +2,7 @@
 
 import { Github, Star, TrendingUp } from 'lucide-react';
 import { BenchmarkStats } from '@/lib/benchmark-types';
+import ThemeToggle from './ThemeToggle';
 
 interface HeaderProps {
   stats: BenchmarkStats;
@@ -9,7 +10,12 @@ interface HeaderProps {
 
 export default function Header({ stats }: HeaderProps) {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+    <header className="bg-gradient-to-r from-blue-600 to-purple-700 text-white relative">
+      {/* Theme Toggle - Top Right */}
+      <div className="absolute top-4 right-4 z-10">
+        <ThemeToggle />
+      </div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
