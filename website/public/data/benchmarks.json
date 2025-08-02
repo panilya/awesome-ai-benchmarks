@@ -25,6 +25,7 @@
               "description": "Comprehensive benchmark for code generation and understanding",
               "paper": "https://openreview.net/forum?id=YrycTjllL0",
               "website": "https://bigcode-bench.github.io/",
+              "leaderboard": "https://bigcode-bench.github.io/",
               "year": 2024
             },
             {
@@ -32,12 +33,14 @@
               "description": "A Research Coding Benchmark Curated by Scientists",
               "website": "https://scicode-bench.github.io/",
               "paper": "https://arxiv.org/abs/2407.13168",
+              "leaderboard": "https://scicode-bench.github.io/#experiment-results",
               "year": 2024
             },
             {
               "name": "Aider Polyglot",
               "description": "Multilingual coding benchmark for AI assistants",
               "website": "https://aider.chat/2024/12/21/polyglot.html#the-polyglot-benchmark",
+              "leaderboard": "https://aider.chat/docs/leaderboards/",
               "year": 2024
             },
             {
@@ -51,6 +54,7 @@
               "name": "Kotlin-bench",
               "description": "Benchmark specifically designed for evaluating Kotlin programming capabilities",
               "website": "https://firebender.com/blog/kotlin-bench",
+              "leaderboard": "https://firebender.com/leaderboard",
               "code": "https://github.com/firebenders/Kotlin-bench",
               "year": 2025
             }
@@ -63,6 +67,7 @@
               "name": "Gorilla",
               "description": "Large Language Model Connected with Massive APIs for function calling evaluation",
               "website": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html#bfcl",
+              "leaderboard": "https://gorilla.cs.berkeley.edu/leaderboard.html",
               "code": "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
               "year": 2024
             },
@@ -77,6 +82,7 @@
               "name": "τ-bench",
               "description": "A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
               "paper": "https://arxiv.org/abs/2406.12045",
+              "leaderboard": "https://github.com/sierra-research/tau-bench?tab=readme-ov-file#leaderboard",
               "code": "https://github.com/sierra-research/tau-bench",
               "year": 2024
             },
@@ -96,6 +102,7 @@
               "name": "terminal-bench",
               "description": "A benchmark for AI agents in terminal environments",
               "website": "https://www.tbench.ai",
+              "leaderboard": "https://www.tbench.ai/leaderboard",
               "code": "https://github.com/laude-institute/terminal-bench",
               "year": 2025
             }
@@ -123,6 +130,7 @@
               "description": "A LLM Code Benchmark Based on Web Standards and Frameworks",
               "code": "https://github.com/bytedance/web-bench",
               "paper": "https://arxiv.org/abs/2505.07473",
+              "leaderboard": "https://huggingface.co/spaces/bytedance-research/Web-Bench-Leaderboard",
               "website": "https://huggingface.co/spaces/bytedance-research/Web-Bench-Leaderboard",
               "year": 2025
             },
@@ -130,6 +138,7 @@
               "name": "KernelBench",
               "description": "Can LLMs Write GPU Kernels?",
               "website": "https://scalingintelligence.stanford.edu/blogs/kernelbench/",
+              "leaderboard": "https://scalingintelligence.stanford.edu/KernelBenchLeaderboard/",
               "year": 2025
             }
           ]
@@ -159,6 +168,7 @@
               "description": "A Benchmark for Long-context Interleaved Video-Language Understanding",
               "paper": "https://arxiv.org/abs/2407.15754",
               "website": "https://longvideobench.github.io/",
+              "leaderboard": "https://longvideobench.github.io/index.html#leaderboard",
               "year": 2024
             },
             {
@@ -167,6 +177,7 @@
               "paper": "https://arxiv.org/pdf/2405.21075",
               "website": "https://video-mme.github.io/home_page.html",
               "code": "https://github.com/MME-Benchmarks/Video-MME",
+              "leaderboard": "https://video-mme.github.io/home_page.html#leaderboard",
               "year": 2025
             },
             {
@@ -174,6 +185,7 @@
               "description": "Multi-task Long Video Understanding Benchmark",
               "code": "https://github.com/JUNJIE99/MLVU",
               "paper": "https://arxiv.org/abs/2406.04264",
+              "leaderboard": "https://github.com/JUNJIE99/MLVU?tab=readme-ov-file#trophy-mlvu-test-leaderboard",
               "year": 2024
             },
             {
@@ -182,6 +194,7 @@
               "website": "https://physics-iq.github.io/",
               "paper": "https://arxiv.org/abs/2501.09038",
               "code": "https://github.com/google-deepmind/physics-IQ-benchmark",
+              "leaderboard": "https://github.com/google-deepmind/physics-IQ-benchmark?tab=readme-ov-file#leaderboard",
               "year": 2025
             },
             {
@@ -189,6 +202,7 @@
               "description": "Comprehensive Benchmark Suite for Video Generative Models",
               "website": "https://vchitect.github.io/VBench-project/",
               "code": "https://github.com/Vchitect/VBench",
+              "leaderboard": "https://huggingface.co/spaces/Vchitect/VBench_Leaderboard",
               "year": 2024
             },
             {
@@ -205,6 +219,7 @@
               "website": "https://favor-bench.github.io/",
               "paper": "https://arxiv.org/abs/2503.14935",
               "code": "https://github.com/FAVOR-Bench/FAVOR-Bench",
+              "leaderboard": "https://favor-bench.github.io/#leaderboard",
               "year": 2025
             }
           ]
@@ -218,6 +233,7 @@
               "paper": "https://arxiv.org/abs/2402.04788",
               "website": "https://mllm-judge.github.io/",
               "code": "https://github.com/Dongping-Chen/MLLM-Judge",
+              "leaderboard": "https://mllm-judge.github.io/leaderboard.html",
               "year": 2024
             },
             {
@@ -239,6 +255,7 @@
               "name": "ENIGMAEVAL",
               "description": "A Benchmark of Long Multimodal Reasoning Challenges",
               "paper": "https://arxiv.org/pdf/2502.08859",
+              "leaderboard": "https://scale.com/leaderboard/enigma_eval",
               "year": 2025
             },
             {
@@ -246,6 +263,7 @@
               "description": "A Benchmark for Evaluating Visual Reasoning in Multi-modal Large Language Models",
               "website": "https://visulogic-benchmark.github.io/VisuLogic/#",
               "paper": "https://arxiv.org/abs/2504.15279",
+              "leaderboard": "https://visulogic-benchmark.github.io/VisuLogic/",
               "year": 2025
             },
             {
@@ -260,6 +278,7 @@
               "description": "Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
               "website": "https://embodiedbench.github.io/",
               "paper": "https://arxiv.org/abs/2502.09560",
+              "leaderboard": "https://embodiedbench.github.io/",
               "year": 2025
             }
           ]
@@ -271,6 +290,7 @@
               "name": "Intelligent Document Processing (IDP) Leaderboard",
               "description": "Comprehensive evaluation of document processing capabilities",
               "website": "https://idp-leaderboard.org/",
+              "leaderboard": "https://idp-leaderboard.org/#leaderboard",
               "code": "https://github.com/NanoNets/docext",
               "year": 2025
             },
@@ -279,6 +299,7 @@
               "description": "Benchmark for evaluating optical character recognition capabilities",
               "paper": "https://arxiv.org/abs/2502.18443",
               "code": "https://github.com/allenai/olmocr/tree/main/olmocr/bench",
+              "leaderboard": "https://github.com/allenai/olmocr/tree/main/olmocr/bench#results",
               "year": 2025
             }
           ]
@@ -302,6 +323,7 @@
               "name": "CaseLaw",
               "description": "Legal case law analysis and reasoning benchmark",
               "website": "https://www.vals.ai/benchmarks/case_law-05-09-2025",
+              "leaderboard": "https://www.vals.ai/benchmarks/case_law-05-09-2025",
               "year": 2025
             },
             {
@@ -340,6 +362,7 @@
               "description": "Comprehensive agent evaluation framework",
               "website": "https://www.realevals.xyz/",
               "paper": "https://arxiv.org/abs/2504.11543",
+              "leaderboard": "https://www.realevals.xyz/",
               "year": 2025
             }
           ]
@@ -359,6 +382,7 @@
               "description": "Evaluating Agents on Setting Up and Executing Tasks from Research Repositories",
               "code": "https://github.com/allenai/super-benchmark",
               "paper": "https://arxiv.org/abs/2409.07440",
+              "leaderboard": "https://huggingface.co/spaces/allenai/super_leaderboard",
               "year": 2024
             },
             {
@@ -366,6 +390,7 @@
               "description": "A Benchmark for Real-World Planning with Language Agents",
               "paper": "https://arxiv.org/abs/2402.01622",
               "website": "https://osu-nlp-group.github.io/TravelPlanner/",
+              "leaderboard": "https://huggingface.co/spaces/osunlp/TravelPlannerLeaderboard",
               "code": "https://github.com/OSU-NLP-Group/TravelPlanner",
               "year": 2024
             },
@@ -374,6 +399,7 @@
               "description": "Benchmarking Long-Context Language Models on Long Procedural Generation",
               "website": "https://princeton-pli.github.io/LongProc/",
               "paper": "https://arxiv.org/pdf/2501.05414",
+              "leaderboard": "https://princeton-pli.github.io/LongProc/#leaderboard",
               "year": 2025
             }
           ]
@@ -386,6 +412,7 @@
               "description": "A Challenging Benchmark for Promoting AGI with Olympiad-Level Bilingual Multimodal Scientific Problems",
               "paper": "https://arxiv.org/pdf/2402.14008",
               "code": "https://github.com/OpenBMB/OlympiadBench",
+              "leaderboard": "https://github.com/OpenBMB/OlympiadBench?tab=readme-ov-file#leaderboard",
               "year": 2024
             },
             {
@@ -393,6 +420,7 @@
               "description": "Benchmarking the Logical Reasoning Ability of Language Models",
               "paper": "https://arxiv.org/abs/2502.01100",
               "website": "https://huggingface.co/blog/yuchenlin/zebra-logic",
+              "leaderboard": "https://huggingface.co/spaces/allenai/ZebraLogic",
               "year": 2025
             },
             {
@@ -414,6 +442,7 @@
               "description": "Enhanced version of the Massive Multitask Language Understanding benchmark",
               "code": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
               "paper": "https://arxiv.org/abs/2406.01574",
+              "leaderboard": "https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro",
               "year": 2024
             },
             {
@@ -421,6 +450,7 @@
               "description": "Scaling LLM Evaluation across 285 Graduate Disciplines",
               "website": "https://supergpqa.github.io/",
               "paper": "https://www.arxiv.org/abs/2502.14739",
+              "leaderboard": "https://supergpqa.github.io/#Dataset",
               "year": 2025
             },
             {
@@ -429,6 +459,7 @@
               "website": "https://physbench.github.io/",
               "paper": "https://arxiv.org/abs/2501.16411",
               "code": "https://github.com/USC-GVL/PhysBench",
+              "leaderboard": "https://physbench.github.io/#leaderboard",
               "year": 2025
             },
             {
@@ -437,6 +468,7 @@
               "website": "https://math-perturb.github.io/",
               "paper": "https://arxiv.org/abs/2502.06453",
               "code": "https://github.com/Kaffaljidhmah2/MATH-Perturb",
+              "leaderboard": "https://math-perturb.github.io/#leaderboard",
               "year": 2025
             },
             {
@@ -444,6 +476,7 @@
               "description": "A Reasoning Challenge for Large Language Models",
               "website": "https://huggingface.co/papers/2502.01584",
               "paper": "https://arxiv.org/abs/2502.01584",
+              "leaderboard": "https://huggingface.co/spaces/nuprl/reasoning-weekly",
               "year": 2025
             },
             {
@@ -485,6 +518,7 @@
               "description": "Multilingual Grade School Math Benchmark (MGSM), Language Models are Multilingual Chain-of-Thought Reasoners",
               "code": "https://github.com/google-research/url-nlp",
               "paper": "https://arxiv.org/abs/2210.03057",
+              "leaderboard": "https://www.vals.ai/benchmarks/mgsm-2025-05-09",
               "year": 2022
             },
             {
@@ -498,12 +532,14 @@
               "name": "MuSR",
               "description": "Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
               "paper": "https://arxiv.org/abs/2310.16049",
+              "leaderboard": "https://klu.ai/glossary/musr-eval",
               "year": 2023
             },
             {
               "name": "AIME Benchmark",
               "description": "American Invitational Mathematics Examination benchmark",
               "website": "https://www.vals.ai/benchmarks/aime-2025-05-09",
+              "leaderboard": "https://www.vals.ai/benchmarks/aime-2025-05-09",
               "year": 2025
             },
             {
@@ -512,6 +548,7 @@
               "website": "https://agi.safe.ai/",
               "paper": "https://arxiv.org/abs/2501.14249",
               "code": "https://github.com/centerforaisafety/hle",
+              "leaderboard": "https://agi.safe.ai/",
               "year": 2025
             },
             {
@@ -534,6 +571,7 @@
               "website": "https://openai.com/index/browsecomp",
               "paper": "https://arxiv.org/abs/2504.12516",
               "code": "https://github.com/openai/simple-evals",
+              "leaderboard": "https://github.com/openai/simple-evals?tab=readme-ov-file#benchmark-results",
               "year": 2025
             },
             {
@@ -541,6 +579,7 @@
               "description": "Evaluating Large Language Models Towards Improved Human Health",
               "website": "https://openai.com/index/healthbench",
               "paper": "https://cdn.openai.com/pdf/bd7a39d5-9e9f-47b3-903c-8b847ca650c7/healthbench_paper.pdf",
+              "leaderboard": "https://openai.com/index/healthbench/",
               "year": 2025
             },
             {
@@ -562,6 +601,7 @@
               "description": "Evaluating Algorithmic Reasoning with Counterexample Creation",
               "website": "https://falsifiers.github.io/",
               "paper": "https://arxiv.org/abs/2502.19414",
+              "leaderboard": "https://falsifiers.github.io/#results",
               "year": 2025
             },
             {
@@ -569,6 +609,7 @@
               "description": "Enhanced version of the BIG-Bench benchmark with more challenging tasks",
               "code": "https://github.com/google-deepmind/bbeh",
               "paper": "https://arxiv.org/abs/2502.19187",
+              "leaderboard": "https://github.com/google-deepmind/bbeh/blob/main/leaderboard.md",
               "year": 2025
             }
           ]
@@ -636,6 +677,7 @@
               "name": "LLMs Battle Snake",
               "description": "Game-based evaluation using Snake gameplay",
               "website": "https://snakebench.com/",
+              "leaderboard": "https://snakebench.com/",
               "year": 2025
             },
             {
@@ -658,6 +700,7 @@
               "description": "Complex game environment for AI agent training and evaluation",
               "website": "https://jackhopkins.github.io/factorio-learning-environment/",
               "paper": "https://arxiv.org/abs/2503.09617",
+              "leaderboard": "https://jackhopkins.github.io/factorio-learning-environment/leaderboard/",
               "year": 2025
             },
             {
@@ -665,18 +708,21 @@
               "description": "Benchmarking Agentic LLM and VLM Reasoning On Games",
               "website": "https://balrogai.com/",
               "paper": "https://arxiv.org/abs/2411.13543",
+              "leaderboard": "https://balrogai.com/",
               "year": 2024
             },
             {
               "name": "WeirdML Benchmark v1 (Archived)",
               "description": "Unconventional machine learning challenges",
               "website": "https://htihle.github.io/weirdml_v1.html",
+              "leaderboard": "https://htihle.github.io/weirdml_v1.html#results",
               "year": 2024
             },
             {
               "name": "WeirdML Benchmark v2",
               "description": "Unconventional machine learning challenges",
               "website": "https://htihle.github.io/weirdml.html",
+              "leaderboard": "https://htihle.github.io/weirdml.html#results",
               "year": 2025
             },
             {
@@ -690,6 +736,7 @@
               "name": "GameArena",
               "description": "Evaluating LLM Reasoning through Live Computer Games",
               "paper": "https://arxiv.org/abs/2412.06394",
+              "leaderboard": "https://huggingface.co/spaces/lmgame/game_arena_bench",
               "year": 2024
             }
           ]
@@ -707,6 +754,7 @@
               "description": "Benchmark for Large Language Models memory capabilities",
               "paper": "https://arxiv.org/abs/2501.13121",
               "code": "https://github.com/ahstat/episodic-memory-benchmark",
+              "leaderboard": "https://github.com/ahstat/episodic-memory-benchmark?tab=readme-ov-file#-ranking-in-context-memory",
               "year": 2025
             }
           ]
@@ -761,6 +809,7 @@
               "description": "A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
               "code": "https://github.com/ssmisya/PRMBench",
               "paper": "https://arxiv.org/abs/2501.03124",
+              "leaderboard": "https://prmbench.github.io/#leaderboard_test",
               "year": 2025
             }
           ]

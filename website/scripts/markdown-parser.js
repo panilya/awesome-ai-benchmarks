@@ -135,6 +135,12 @@ function parseMarkdownToJSON(markdownContent) {
                 currentBenchmark.tags = tagsValue.split(',').map(tag => tag.trim());
               }
             }
+            else if (fieldLine.startsWith('Leaderboard: ')) {
+              const leaderboardValue = fieldLine.substring(13).trim();
+              if (leaderboardValue !== '(optional)') {
+                currentBenchmark.leaderboard = leaderboardValue;
+              }
+            }
           } else {
             // If line doesn't match expected format, break out of optional fields parsing
             i--; // Back up one line

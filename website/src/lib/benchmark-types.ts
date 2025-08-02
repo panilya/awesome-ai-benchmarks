@@ -8,6 +8,7 @@ export interface Benchmark {
   year: number;
   metrics?: string[];
   tags?: string[];
+  leaderboard?: string;
   category: string;
   subcategory: string;
 }

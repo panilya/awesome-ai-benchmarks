@@ -2,7 +2,7 @@
 
 import { Benchmark } from '@/lib/benchmark-types';
 import { truncateText } from '@/lib/utils';
-import { ExternalLink, Code, Globe, Calendar, Tag, FileText } from 'lucide-react';
+import { ExternalLink, Code, Globe, Calendar, Tag, FileText, Trophy } from 'lucide-react';
 import Link from 'next/link';
 
 interface BenchmarkCardProps {
@@ -72,6 +72,19 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
           >
             <Globe size={14} />
             Website
+            <ExternalLink size={12} className="opacity-70" />
+          </a>
+        )}
+
+        {benchmark.leaderboard && (
+          <a
+            href={benchmark.leaderboard}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm text-orange-600 hover:text-orange-800 dark:text-orange-400 dark:hover:text-orange-300 font-medium transition-colors"
+          >
+            <Trophy size={14} />
+            Leaderboard
             <ExternalLink size={12} className="opacity-70" />
           </a>
         )}
