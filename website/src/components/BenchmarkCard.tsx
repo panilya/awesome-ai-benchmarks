@@ -3,7 +3,6 @@
 import { Benchmark } from '@/lib/benchmark-types';
 import { truncateText } from '@/lib/utils';
 import { ExternalLink, Code, Globe, Calendar, Tag, FileText, Trophy } from 'lucide-react';
-import Link from 'next/link';
 
 interface BenchmarkCardProps {
   benchmark: Benchmark;
@@ -21,14 +20,9 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
 
       {/* Header */}
       <div className="mb-4 pr-16">
-        <Link
-          href={`/benchmark/${benchmark.id}`}
-          className="group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
-        >
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 line-clamp-1">
-            {benchmark.name}
-          </h3>
-        </Link>
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 line-clamp-1">
+          {benchmark.name}
+        </h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
           {benchmark.subcategory}
         </p>
