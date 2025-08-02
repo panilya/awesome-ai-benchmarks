@@ -132,6 +132,11 @@ export default async function RootLayout({
             }),
           }}
         />
+        <script 
+          data-goatcounter="https://aibenchmarks.goatcounter.com/count"
+          async 
+          src="//gc.zgo.at/count.js"
+        />
       </head>
       <body className={`${inter.className} antialiased bg-gray-50 dark:bg-gray-900`}>
         <div className="min-h-screen flex flex-col">
