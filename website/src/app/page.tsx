@@ -14,6 +14,7 @@ export default function HomePage() {
   const [filters, setFilters] = useState<FilterOptions>({});
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
 
   // Load benchmark data
   useEffect(() => {
@@ -99,6 +100,17 @@ export default function HomePage() {
     return sortBenchmarks(filtered, 'year', 'desc');
   }, [benchmarkData, filters]);
 
+  // Handle scroll to top after filters change
+  useEffect(() => {
+    if (shouldScrollToTop) {
+      // Use setTimeout to ensure the DOM has updated with filtered content
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setShouldScrollToTop(false);
+      }, 0);
+    }
+  }, [shouldScrollToTop, filteredAndSortedBenchmarks]);
+
   const allTags = useMemo(() => {
     if (!benchmarkData?.benchmarks) return [];
     return extractAllTags(benchmarkData.benchmarks);
@@ -151,8 +163,11 @@ export default function HomePage() {
     };
   }, [benchmarkData]);
 
-  const handleFiltersChange = (newFilters: FilterOptions) => {
+  const handleFiltersChange = (newFilters: FilterOptions, scrollToTop = false) => {
     setFilters(newFilters);
+    if (scrollToTop) {
+      setShouldScrollToTop(true);
+    }
 
     // Update URL
     if (typeof window !== 'undefined') {
@@ -252,8 +267,7 @@ export default function HomePage() {
       </main>
 
       <Footer onCategoryClick={(category) => {
-        handleFiltersChange({ ...filters, category, subcategory: undefined });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        handleFiltersChange({ ...filters, category, subcategory: undefined }, true);
       }} />
     </>
   );
