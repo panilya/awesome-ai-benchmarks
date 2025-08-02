@@ -1,4 +1,4 @@
-# Awesome AI Benchmarks
+# Awesome AI Benchmarks [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 A curated list of AI benchmarks across various domains including Natural Language Processing, Computer Vision, and Multimodal tasks. This repository automatically generates a searchable website at [aibenchmarks.net](https://aibenchmarks.net/) from the benchmark entries below.
 
