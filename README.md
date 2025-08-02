@@ -225,6 +225,60 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: video understanding, motion analysis, fine-grained, comprehensive, video motion
 
+- **VideoPhy** - Evaluating Physical Commonsense for Video Generation
+  - Website: https://videophy.github.io/
+  - Paper: https://arxiv.org/abs/2406.03520
+  - Code: https://github.com/Hritikbansal/videophy
+  - Leaderboard: https://videophy.github.io/
+  - Year: 2024
+  - Tags: video generation, physical commonsense, evaluation, physics, video understanding
+
+- **VideoPhy 2** - Challenging Action-Centric Physical Commonsense Evaluation of Video Generation
+  - Website: https://videophy2.github.io/
+  - Paper: https://arxiv.org/abs/2503.06800
+  - Code: https://github.com/Hritikbansal/videophy/tree/main/VIDEOPHY2
+  - Leaderboard: https://github.com/Hritikbansal/videophy/tree/main/VIDEOPHY2#human-leaderboard-
+  - Year: 2025
+  - Tags: video generation, physical commonsense, action-centric, evaluation, challenging
+
+- **TempCompass** - Do Video LLMs Really Understand Videos?
+  - Paper: https://arxiv.org/abs/2403.00476
+  - Leaderboard: https://huggingface.co/spaces/lyx97/TempCompass
+  - Code: https://github.com/llyx97/TempCompass
+  - Year: 2024
+  - Tags: video understanding, temporal reasoning, video llms, evaluation, multimodal
+
+- **GenVidBench** - A Challenging Benchmark for Detecting AI-Generated Video
+  - Website: https://genvidbench.github.io/
+  - Paper: https://arxiv.org/abs/2501.11340
+  - Code: https://github.com/genvidbench/GenVidBench
+  - Year: 2025
+  - Tags: video detection, ai-generated content, synthetic detection, video analysis, challenging
+
+- **PhyGenBench** - Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation
+  - Website: https://phygenbench123.github.io/
+  - Paper: https://arxiv.org/abs/2410.05363
+  - Code: https://github.com/OpenGVLab/PhyGenBench
+  - Leaderboard: https://phygenbench123.github.io/#leaderboard
+  - Year: 2024
+  - Tags: video generation, physical commonsense, world simulation, physics, benchmark
+
+- **IPV-Bench** - Impossible Videos
+  - Website: https://showlab.github.io/Impossible-Videos/
+  - Paper: https://arxiv.org/abs/2503.14378
+  - Code: https://github.com/showlab/Impossible-Videos
+  - Leaderboard: https://github.com/showlab/Impossible-Videos?tab=readme-ov-file#-leaderboard
+  - Year: 2025
+  - Tags: video understanding, impossible scenarios, challenging, video analysis, evaluation
+
+- **VidCapBench** - A Comprehensive Benchmark of Video Captioning for Controllable Text-to-Video Generation
+  - Website: https://github.com/VidCapBench/VidCapBench
+  - Paper: https://arxiv.org/abs/2502.12782
+  - Code: https://github.com/VidCapBench/VidCapBench
+  - Leaderboard: https://github.com/VidCapBench/VidCapBench?tab=readme-ov-file#-experimental-results
+  - Year: 2025
+  - Tags: video captioning, text-to-video, controllable generation, comprehensive, evaluation
+
 #### Multimodal Evaluation
 - **MLLM-as-a-Judge** - Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark
   - Paper: https://arxiv.org/abs/2402.04788
@@ -273,6 +327,27 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: embodied ai, multimodal, vision-driven, agents, comprehensive
 
+- **SEED-Bench** - Benchmarking Multimodal Large Language Models
+  - Paper: https://arxiv.org/abs/2307.16125
+  - Leaderboard: https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard
+  - Code: https://github.com/AILab-CVC/SEED-Bench
+  - Year: 2023
+  - Tags: multimodal, large language models, comprehensive, evaluation, benchmark
+
+- **LOKI** - A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models
+  - Website: https://opendatalab.github.io/LOKI/
+  - Paper: https://arxiv.org/abs/2410.09732
+  - Code: https://github.com/opendatalab/LOKI
+  - Year: 2024
+  - Tags: synthetic data detection, multimodal, comprehensive, ai-generated content, evaluation
+
+- **CapArena** - Benchmarking and Analyzing Detailed Image Captioning in the LLM Era
+  - Website: https://caparena.github.io/
+  - Paper: https://arxiv.org/abs/2503.12329
+  - Leaderboard: https://huggingface.co/spaces/yan111222/CapArena_Auto
+  - Year: 2025
+  - Tags: image captioning, detailed captioning, llm era, benchmarking, multimodal
+
 #### OCR & Document Understanding
 - **Intelligent Document Processing (IDP) Leaderboard** - Comprehensive evaluation of document processing capabilities
   - Website: https://idp-leaderboard.org/
@@ -314,6 +389,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Code: https://github.com/xlang-ai/Spider2
   - Year: 2025
   - Tags: text-to-sql, database, query generation, enterprise, real-world
+
+- **AgroBench** - Vision-Language Model Benchmark in Agriculture
+  - Website: https://dahlian00.github.io/AgroBenchPage/
+  - Paper: https://arxiv.org/abs/2507.20519
+  - Code: https://github.com/dahlian00/AgroBench/tree/main
+  - Year: 2025
+  - Tags: agriculture, vision-language, domain-specific, agricultural applications, multimodal
 
 ### Agent Capabilities & Reasoning
 
