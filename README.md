@@ -36,9 +36,9 @@ A curated list of AI benchmarks across various domains including Natural Languag
 
 ## 📊 Statistics
 
-- **Total Benchmarks**: 56
+- **Total Benchmarks**: 93
 - **Categories**: 5
-- **Subcategories**: 18
+- **Subcategories**: 19
 - **Last Updated**: 2025-08-02
 
 ## 🚀 Website
