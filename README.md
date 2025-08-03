@@ -767,6 +767,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: reward models, process-level evaluation, fine-grained evaluation, challenging, rlhf
 
+- **AHA Leaderboard** - AI — Human alignment
+  - Website: https://huggingface.co/blog/etemiz/aha-leaderboard
+  - Leaderboard: https://sheet.zoho.com/sheet/open/mz41j09cc640a29ba47729fed784a263c1d08
+  - Year: 2025
+  - Tags: alignment, safety, beneficial, factuality, reality
+
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
