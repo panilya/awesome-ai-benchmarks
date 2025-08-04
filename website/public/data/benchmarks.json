@@ -1633,11 +1633,25 @@
                 "challenging",
                 "rlhf"
               ]
+            },
+            {
+              "name": "AHA Leaderboard",
+              "description": "AI — Human alignment",
+              "website": "https://huggingface.co/blog/etemiz/aha-leaderboard",
+              "leaderboard": "https://sheet.zoho.com/sheet/open/mz41j09cc640a29ba47729fed784a263c1d08",
+              "year": 2025,
+              "tags": [
+                "alignment",
+                "safety",
+                "beneficial",
+                "factuality",
+                "reality"
+              ]
             }
           ]
         }
       ]
     }
   ],
-  "lastUpdated": "2025-08-02T20:38:00.563Z"
+  "lastUpdated": "2025-08-04T18:41:08.982Z"
 }
