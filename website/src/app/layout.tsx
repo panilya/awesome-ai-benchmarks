@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.SITE_URL || 'https://aibenchmarks.net/'),
+  metadataBase: new URL(process.env.SITE_URL || 'https://aibenchmarks.net'),
   alternates: {
     canonical: '/',
   },
@@ -119,14 +119,14 @@ export default async function RootLayout({
               '@type': 'WebSite',
               name: 'Awesome AI Benchmarks',
               description: 'A curated collection of AI benchmarks across various domains and tasks.',
-              url: process.env.SITE_URL || 'https://aibenchmarks.net/',
+              url: process.env.SITE_URL || 'https://aibenchmarks.net',
               about: categories,
               keywords: ['AI benchmarks', 'LLM benchmarks', 'machine learning', 'artificial intelligence evaluation', 'benchmark datasets', 'AI performance testing', 'LLM performance testing'],
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {
                   '@type': 'EntryPoint',
-                  urlTemplate: `${process.env.SITE_URL || 'https://aibenchmarks.net/'}/?search={search_term_string}`,
+                  urlTemplate: `${process.env.SITE_URL || 'https://aibenchmarks.net'}/?search={search_term_string}`,
                 },
                 'query-input': 'required name=search_term_string',
               },
