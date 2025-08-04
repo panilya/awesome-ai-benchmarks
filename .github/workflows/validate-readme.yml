@@ -43,7 +43,7 @@ jobs:
         echo "" >> parse-results.md
         node -e "
           const fs = require('fs');
-          const data = JSON.parse(fs.readFileSync('src/data/benchmarks.json', 'utf8'));
+          const data = JSON.parse(fs.readFileSync('website/public/data/benchmarks.json', 'utf8'));
           console.log(\`- Total benchmarks: \${data.totalCount}\`);
           console.log(\`- Categories: \${data.categories.length}\`);
           console.log(\`- Last updated: \${data.lastUpdated}\`);
@@ -94,7 +94,7 @@ jobs:
           - If validation failed: Please fix the issues above and update your PR
           - The website will be automatically updated once this PR is merged
           
-          🌐 **Preview:** Once merged, changes will be live at [awesome-ai-benchmarks.vercel.app](https://awesome-ai-benchmarks.vercel.app)
+          🌐 **Preview:** Once merged, changes will be live at [aibenchmarks.net](https://aibenchmarks.net/)
           `;
           
           github.rest.issues.createComment({
