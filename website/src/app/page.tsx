@@ -5,7 +5,6 @@ import { FilterOptions, BenchmarkStats, ParsedReadme } from '@/lib/benchmark-typ
 import { filterBenchmarks, sortBenchmarks, extractAllTags, getYearRange } from '@/lib/utils';
 import BenchmarkCard from '@/components/BenchmarkCard';
 import SearchFilter from '@/components/SearchFilter';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { AlertCircle, Loader2 } from 'lucide-react';
 
@@ -306,7 +305,7 @@ export default function HomePage() {
 
             <a
               href="/subcategories"
-              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl border-2 border-primary"
             >
               <svg
                 className="h-5 w-5"

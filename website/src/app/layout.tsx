@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/Header';
+import { ReportIssueButton } from '@/components/ReportIssueButton';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Awesome AI Benchmarks',
-  description: 'A curated collection of AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks. Discover and explore the most important benchmarks in artificial intelligence research.',
+  description: 'A curated collection of 100+ AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks. Discover and explore the most important benchmarks in artificial intelligence research.',
   keywords: [
     'AI benchmarks',
     'LLM benchmarks',
@@ -155,6 +155,7 @@ export default async function RootLayout({
         <div className="min-h-screen flex flex-col">
           <Header />
           {children}
+          <ReportIssueButton />
         </div>
       </body>
     </html>

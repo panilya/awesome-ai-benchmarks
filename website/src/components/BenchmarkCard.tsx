@@ -19,7 +19,7 @@ export default function BenchmarkCard({ benchmark }: BenchmarkCardProps) {
       </div>
 
       {/* Header */}
-      <div className="mb-4 pr-16">
+      <div className="mb-4">
         <h3 className="text-xl font-semibold text-card-foreground mb-2 line-clamp-1">
           {benchmark.name}
         </h3>
