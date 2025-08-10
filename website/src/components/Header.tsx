@@ -2,16 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import ThemeToggle from './ThemeToggle';
 
 export function Header() {
   const pathname = usePathname();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -62,11 +55,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-
-        {/* Theme Toggle - positioned absolutely */}
-        <div className="absolute right-4 flex items-center">
-          {mounted && <ThemeToggle />}
-        </div>
       </div>
     </header>
   );

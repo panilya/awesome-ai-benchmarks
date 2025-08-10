@@ -94,7 +94,7 @@ async function getCategories() {
     const filePath = path.join(process.cwd(), 'public/data/benchmarks.json');
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(fileContents);
-    
+
     return data.categories.map((category: any) => ({
       '@type': 'Thing',
       name: category.name,
@@ -113,7 +113,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const categories = await getCategories();
-  
+
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
@@ -145,19 +145,17 @@ export default async function RootLayout({
             }),
           }}
         />
-        <script 
+        <script
           data-goatcounter="https://aibenchmarks.goatcounter.com/count"
-          async 
+          async
           src="//gc.zgo.at/count.js"
         />
       </head>
       <body className={`${inter.className} antialiased bg-secondary text-secondary-foreground`}>
-        <ThemeProvider>
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            {children}
-          </div>
-        </ThemeProvider>
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
