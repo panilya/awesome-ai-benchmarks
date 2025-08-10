@@ -210,6 +210,8 @@ npm run validate     # Validate README.md format
 5. Automated validation will check format
 6. After merge, website automatically updates
 
+**Important**: When adding a new category to README.md, you must also update the category descriptions and icons in `website/src/components/CategoryCard.tsx` to ensure the website displays the new category correctly with appropriate descriptions and visual elements.
+
 ### Quality Standards
 - Peer-reviewed publications only
 - Widely used in research community

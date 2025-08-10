@@ -49,26 +49,16 @@ const categoryToSlug = (category: string): string => {
 // Helper function to get descriptive text for each category
 const getCategoryDescription = (category: string): string => {
   switch (category) {
-    case 'Mathematical and Scientific Reasoning':
-      return 'Benchmarks that evaluate mathematical problem-solving, scientific reasoning, and quantitative analysis capabilities.';
-    case 'Code and Programming':
-      return 'Assessments of code generation, debugging, programming language understanding, and software development tasks.';
-    case 'Agents and Tool Use':
-      return 'Evaluations of AI systems\' ability to use tools, interact with APIs, and perform complex multi-step tasks.';
-    case 'Language Understanding and Reasoning':
-      return 'Comprehensive tests of natural language comprehension, logical reasoning, and linguistic capabilities.';
-    case 'Multimodal (Vision, Video)':
-      return 'Benchmarks combining visual and textual understanding, including image analysis and video comprehension.';
-    case 'Memory and Long-Context':
-      return 'Tests of information retention, long-context understanding, and memory-dependent reasoning tasks.';
-    case 'Games and Interactive Environments':
-      return 'Evaluations using game environments and interactive scenarios to test strategic thinking and adaptation.';
-    case 'Domain-Specific Applications':
-      return 'Specialized benchmarks for specific fields like medicine, law, finance, and other professional domains.';
-    case 'Ethics, Safety, and Bias':
-      return 'Assessments of AI safety, ethical reasoning, bias detection, and responsible AI behavior.';
-    case 'Miscellaneous/General':
-      return 'General-purpose benchmarks and evaluations that don\'t fit into specific categories.';
+    case 'Programming & Code Generation':
+      return 'Comprehensive benchmarks for code generation, programming languages, API usage, terminal environments, logic & reasoning, and database queries.';
+    case 'Multimodal & Vision':
+      return 'Benchmarks combining visual and textual understanding, including video analysis, multimodal evaluation, OCR, and document understanding.';
+    case 'Legal & Domain-Specific':
+      return 'Specialized benchmarks for specific professional domains including legal reasoning, case law analysis, and domain-specific applications.';
+    case 'Agent Capabilities & Reasoning':
+      return 'Evaluations of AI agents\' long-term coherence, scientific reasoning, security, business applications, world modeling, and interactive capabilities.';
+    case 'Creative & Evaluation':
+      return 'Benchmarks for memory & episodic tasks, creative writing, judgment & analysis, and other creative AI capabilities.';
     default:
       return 'A collection of benchmarks for evaluating AI capabilities in this domain.';
   }
@@ -77,25 +67,15 @@ const getCategoryDescription = (category: string): string => {
 const CategoryCard: React.FC<CategoryCardProps> = ({ category, benchmarks }) => {
   const getCategoryIcon = (categoryName: string) => {
     switch (categoryName) {
-      case 'Mathematical and Scientific Reasoning':
-        return <Calculator className="h-6 w-6 text-primary" />;
-      case 'Code and Programming':
+      case 'Programming & Code Generation':
         return <Code2 className="h-6 w-6 text-primary" />;
-      case 'Agents and Tool Use':
-        return <Wrench className="h-6 w-6 text-primary" />;
-      case 'Language Understanding and Reasoning':
-        return <Brain className="h-6 w-6 text-primary" />;
-      case 'Multimodal (Vision, Video)':
+      case 'Multimodal & Vision':
         return <Image className="h-6 w-6 text-primary" />;
-      case 'Memory and Long-Context':
-        return <Database className="h-6 w-6 text-primary" />;
-      case 'Games and Interactive Environments':
-        return <Gamepad2 className="h-6 w-6 text-primary" />;
-      case 'Domain-Specific Applications':
+      case 'Legal & Domain-Specific':
         return <Briefcase className="h-6 w-6 text-primary" />;
-      case 'Ethics, Safety, and Bias':
-        return <Shield className="h-6 w-6 text-primary" />;
-      case 'Miscellaneous/General':
+      case 'Agent Capabilities & Reasoning':
+        return <Brain className="h-6 w-6 text-primary" />;
+      case 'Creative & Evaluation':
         return <Layers className="h-6 w-6 text-primary" />;
       default:
         return <Layers className="h-6 w-6 text-primary" />;
@@ -127,7 +107,9 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, benchmarks }) => 
             <div className="mb-4">
               <p className="font-medium mb-2">Subcategories:</p>
               <div className="space-y-1">
-                {category.subcategories.slice(0, 4).map(subcategory => (
+                {category.subcategories
+                  .sort((a, b) => b.count - a.count)
+                  .slice(0, 4).map(subcategory => (
                   <div key={subcategory.name} className="flex items-center justify-between">
                     <Link
                       href={`/?category=${encodeURIComponent(category.name)}&subcategory=${encodeURIComponent(subcategory.name)}`}
