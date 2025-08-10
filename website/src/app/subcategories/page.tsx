@@ -165,7 +165,7 @@ export default function SubcategoriesPage() {
     <>
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-        <div className="text-center mb-16">
+        <div className="text-center mb-4">
           <h1 className="section-heading mb-6">Benchmark Subcategories</h1>
           <p className="section-description mb-10">
             Explore specific subcategories to find highly targeted benchmarks for your evaluation needs.

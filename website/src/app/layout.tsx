@@ -12,11 +12,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Awesome AI Benchmarks',
-  description: 'A curated collection of 100+ AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks. Discover and explore the most important benchmarks in artificial intelligence research.',
+  description: 'A curated collection of 100+ AI benchmarks including Agent Capabilities, Reasoning, Code Generation, Multimodal, and other AI domains. Discover and explore the most important benchmarks in artificial intelligence research.',
   keywords: [
     'AI benchmarks',
     'LLM benchmarks',
     'machine learning',
+    'Agent Capabilities benchmarks',
+    'Reasoning benchmarks',
+    'Code Generation benchmarks',
+    'Multimodal benchmarks',
+    'Legal benchmarks',
+    'Domain-Specific benchmarks',
+    'OCR & Document Understanding benchmarks',
+    'long-term coherence benchmarks',
+    'Security & Robustness benchmarks',
+    'swarm & multi-agent benchmarks',
+    'world modeling LLM benchmarks',
+    'API & Tool Usage benchmarks',
+    'Video Understanding benchmarks',
     'NLP',
     'computer vision',
     'multimodal',
@@ -50,7 +63,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'Awesome AI Benchmarks',
-    description: 'A curated collection of AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks.',
+    description: 'A curated collection of 100+ AI benchmarks including Agent Capabilities, Reasoning, Code Generation, Multimodal, and other AI domains.',
     url: '/',
     siteName: 'Awesome AI Benchmarks',
     images: [
@@ -67,8 +80,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Awesome AI Benchmarks',
-    description: 'A curated collection of AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks.',
-    images: ['/og-image.png'],
+    description: 'A curated collection of 100+ AI benchmarks including Agent Capabilities, Reasoning, Code Generation, Multimodal, and other AI domains.',
   },
   robots: {
     index: true,
@@ -130,7 +142,7 @@ export default async function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'Awesome AI Benchmarks',
-              description: 'A curated collection of AI benchmarks across various domains and tasks.',
+              description: 'A curated collection of 100+ AI benchmarks including Agent Capabilities, Reasoning, Code Generation, Multimodal, and other AI domains.',
               url: process.env.SITE_URL || 'https://aibenchmarks.net',
               about: categories,
               keywords: ['AI benchmarks', 'LLM benchmarks', 'machine learning', 'artificial intelligence evaluation', 'benchmark datasets', 'AI performance testing', 'LLM performance testing'],
