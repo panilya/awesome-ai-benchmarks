@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Github, Heart, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 
 interface Category {
   name: string;
@@ -56,6 +57,22 @@ export default function Footer({ onCategoryClick }: FooterProps = {}) {
           <div>
             <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/categories"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Categories
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/subcategories"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Subcategories
+                </Link>
+              </li>
               <li>
                 <a
                   href="https://github.com/panilya/awesome-ai-benchmarks"
@@ -139,21 +156,17 @@ export default function Footer({ onCategoryClick }: FooterProps = {}) {
               © 2025 Awesome AI Benchmarks. Open source under MIT License.
             </div>
 
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <span>Updated automatically</span>
+            <div className="text-center text-xs text-muted-foreground">
+              Data sourced from community contributions.
+              <a
+                href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 ml-1"
+              >
+                View raw data
+              </a>
             </div>
-          </div>
-
-          <div className="mt-4 text-center text-xs text-muted-foreground">
-            Data sourced from community contributions.
-            <a
-              href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/README.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 ml-1"
-            >
-              View raw data
-            </a>
           </div>
         </div>
       </div>
