@@ -18,6 +18,10 @@ A curated list of AI benchmarks across various domains including Natural Languag
     - [Video Understanding](#video-understanding)
     - [Multimodal Evaluation](#multimodal-evaluation)
     - [OCR & Document Understanding](#ocr--document-understanding)
+  - [Translation & Multilingual](#translation--multilingual)
+    - [General Translation Evaluation](#general-translation-evaluation)
+    - [Domain-Specific Translation](#domain-specific-translation)
+    - [Multilingual Reasoning](#multilingual-reasoning)
   - [Domain-Specific](#domain-specific)
     - [Legal Reasoning](#legal-reasoning)
     - [Agriculture](#agriculture)
@@ -38,9 +42,9 @@ A curated list of AI benchmarks across various domains including Natural Languag
 
 ## 📊 Statistics
 
-- **Total Benchmarks**: 105
-- **Categories**: 5
-- **Subcategories**: 19
+- **Total Benchmarks**: 113
+- **Categories**: 6
+- **Subcategories**: 23
 - **Last Updated**: 2025-08-10
 
 ## 🚀 Website
@@ -371,6 +375,57 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Leaderboard: https://github.com/allenai/olmocr/tree/main/olmocr/bench#results
   - Year: 2025
   - Tags: ocr, optical character recognition, text recognition, document processing, evaluation
+
+### Translation & Multilingual
+
+#### General Translation Evaluation
+- **Evaluating the Translation Performance of Large Language Models Based on Euas-20** - Comprehensive evaluation of LLM translation capabilities using the Euas-20 dataset
+  - Paper: https://arxiv.org/abs/2408.03119
+  - Year: 2024
+  - Tags: translation, multilingual, evaluation, language models, performance assessment
+
+- **DiBiMT** - A Gold Evaluation Benchmark for Studying Lexical Ambiguity in Machine Translation
+  - Paper: https://www.researchgate.net/publication/384496635_DiBiMT_A_Gold_Evaluation_Benchmark_for_Studying_Lexical_Ambiguity_in_Machine_Translation
+  - Leaderboard: https://nlp.uniroma1.it/dibimt/public/leaderboard
+  - Year: 2025
+  - Tags: translation, lexical ambiguity, machine translation, evaluation, gold standard
+
+- **TransBench** - Multilingual Translation Leaderboard for Industrial-Scale Applications
+  - Paper: https://arxiv.org/abs/2505.14244
+  - Code: https://github.com/AIDC-AI/TransBench
+  - Year: 2025
+  - Tags: translation, multilingual, industrial scale, leaderboard, applications
+
+- **FRMT** - A Benchmark for Few-Shot Region-Aware Machine Translation
+  - Paper: https://arxiv.org/abs/2210.00193
+  - Code: https://github.com/google-research/google-research/tree/master/frmt
+  - Year: 2022
+  - Tags: translation, few-shot, region-aware, machine translation, localization
+
+#### Domain-Specific Translation
+- **VNTL Leaderboard** - Japanese Visual Novels into English translating leaderboard for evaluating translation quality
+  - Website: https://huggingface.co/datasets/lmg-anon/vntl-leaderboard
+  - Year: 2024
+  - Tags: translation, japanese, english, visual novels, leaderboard, domain-specific
+
+- **SwiLTra-Bench** - The Swiss Legal Translation Benchmark for evaluating legal document translation
+  - Code: https://github.com/JoelNiklaus/SwissLegalTranslations
+  - Paper: https://arxiv.org/abs/2503.01372
+  - Year: 2025
+  - Tags: translation, legal, swiss law, domain-specific, legal documents
+
+#### Multilingual Reasoning
+- **DATETIME** - A new benchmark to measure LLM translation and reasoning capabilities with temporal expressions
+  - Paper: https://arxiv.org/abs/2504.16155
+  - Code: https://github.com/EdGaere/DATETIME
+  - Year: 2025
+  - Tags: translation, temporal reasoning, datetime, multilingual, reasoning capabilities
+
+- **MultiNRC** - A Challenging and Native Multilingual Reasoning Evaluation Benchmark for LLMs
+  - Paper: https://arxiv.org/abs/2507.17476
+  - Leaderboard: https://scale.com/leaderboard/multinrc
+  - Year: 2025
+  - Tags: multilingual, reasoning, evaluation, challenging, native languages
 
 ### Domain-Specific
 
