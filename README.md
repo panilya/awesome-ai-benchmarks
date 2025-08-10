@@ -1,6 +1,6 @@
 # Awesome AI Benchmarks [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-A curated list of AI benchmarks across various domains including Natural Language Processing, Computer Vision, and Multimodal tasks. This repository automatically generates a searchable website at [aibenchmarks.net](https://aibenchmarks.net/) from the benchmark entries below.
+A curated list of 100+ AI benchmarks across various domains including Agent Capabilities, Reasoning, Translation, Code Generation, Multimodal, and other AI domains. This repository automatically generates a searchable website at [aibenchmarks.net](https://aibenchmarks.net/) from the benchmark entries below.
 
 ## 📋 Table of Contents
 
@@ -44,7 +44,7 @@ A curated list of AI benchmarks across various domains including Natural Languag
 
 - **Total Benchmarks**: 113
 - **Categories**: 6
-- **Subcategories**: 23
+- **Subcategories**: 24
 - **Last Updated**: 2025-08-10
 
 ## 🚀 Website
