@@ -709,6 +709,137 @@
       ]
     },
     {
+      "name": "Translation & Multilingual",
+      "subcategories": [
+        {
+          "name": "General Translation Evaluation",
+          "benchmarks": [
+            {
+              "name": "Evaluating the Translation Performance of Large Language Models Based on Euas-20",
+              "description": "Comprehensive evaluation of LLM translation capabilities using the Euas-20 dataset",
+              "paper": "https://arxiv.org/abs/2408.03119",
+              "year": 2024,
+              "tags": [
+                "translation",
+                "multilingual",
+                "evaluation",
+                "language models",
+                "performance assessment"
+              ]
+            },
+            {
+              "name": "DiBiMT",
+              "description": "A Gold Evaluation Benchmark for Studying Lexical Ambiguity in Machine Translation",
+              "paper": "https://www.researchgate.net/publication/384496635_DiBiMT_A_Gold_Evaluation_Benchmark_for_Studying_Lexical_Ambiguity_in_Machine_Translation",
+              "leaderboard": "https://nlp.uniroma1.it/dibimt/public/leaderboard",
+              "year": 2025,
+              "tags": [
+                "translation",
+                "lexical ambiguity",
+                "machine translation",
+                "evaluation",
+                "gold standard"
+              ]
+            },
+            {
+              "name": "TransBench",
+              "description": "Multilingual Translation Leaderboard for Industrial-Scale Applications",
+              "paper": "https://arxiv.org/abs/2505.14244",
+              "code": "https://github.com/AIDC-AI/TransBench",
+              "year": 2025,
+              "tags": [
+                "translation",
+                "multilingual",
+                "industrial scale",
+                "leaderboard",
+                "applications"
+              ]
+            },
+            {
+              "name": "FRMT",
+              "description": "A Benchmark for Few-Shot Region-Aware Machine Translation",
+              "paper": "https://arxiv.org/abs/2210.00193",
+              "code": "https://github.com/google-research/google-research/tree/master/frmt",
+              "year": 2022,
+              "tags": [
+                "translation",
+                "few-shot",
+                "region-aware",
+                "machine translation",
+                "localization"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Domain-Specific Translation",
+          "benchmarks": [
+            {
+              "name": "VNTL Leaderboard",
+              "description": "Japanese Visual Novels into English translating leaderboard for evaluating translation quality",
+              "website": "https://huggingface.co/datasets/lmg-anon/vntl-leaderboard",
+              "year": 2024,
+              "tags": [
+                "translation",
+                "japanese",
+                "english",
+                "visual novels",
+                "leaderboard",
+                "domain-specific"
+              ]
+            },
+            {
+              "name": "SwiLTra-Bench",
+              "description": "The Swiss Legal Translation Benchmark for evaluating legal document translation",
+              "code": "https://github.com/JoelNiklaus/SwissLegalTranslations",
+              "paper": "https://arxiv.org/abs/2503.01372",
+              "year": 2025,
+              "tags": [
+                "translation",
+                "legal",
+                "swiss law",
+                "domain-specific",
+                "legal documents"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Multilingual Reasoning",
+          "benchmarks": [
+            {
+              "name": "DATETIME",
+              "description": "A new benchmark to measure LLM translation and reasoning capabilities with temporal expressions",
+              "paper": "https://arxiv.org/abs/2504.16155",
+              "code": "https://github.com/EdGaere/DATETIME",
+              "year": 2025,
+              "tags": [
+                "translation",
+                "temporal reasoning",
+                "datetime",
+                "multilingual",
+                "reasoning capabilities"
+              ]
+            },
+            {
+              "name": "MultiNRC",
+              "description": "A Challenging and Native Multilingual Reasoning Evaluation Benchmark for LLMs",
+              "paper": "https://arxiv.org/abs/2507.17476",
+              "leaderboard": "https://scale.com/leaderboard/multinrc",
+              "year": 2025,
+              "tags": [
+                "multilingual",
+                "reasoning",
+                "evaluation",
+                "challenging",
+                "native languages"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Domain-Specific",
       "subcategories": [
         {
@@ -1663,5 +1794,5 @@
       ]
     }
   ],
-  "lastUpdated": "2025-08-10T14:59:58.938Z"
+  "lastUpdated": "2025-08-10T20:12:01.467Z"
 }
