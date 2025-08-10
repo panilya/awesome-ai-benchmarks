@@ -272,6 +272,21 @@
                 "query generation",
                 "retrieval"
               ]
+            },
+            {
+              "name": "Spider 2.0",
+              "description": "Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+              "website": "https://spider2-sql.github.io/",
+              "paper": "https://arxiv.org/abs/2411.07763",
+              "code": "https://github.com/xlang-ai/Spider2",
+              "year": 2025,
+              "tags": [
+                "text-to-sql",
+                "database",
+                "query generation",
+                "enterprise",
+                "real-world"
+              ]
             }
           ]
         }
@@ -694,7 +709,7 @@
       ]
     },
     {
-      "name": "Legal & Domain-Specific",
+      "name": "Domain-Specific",
       "subcategories": [
         {
           "name": "Legal Reasoning",
@@ -726,35 +741,12 @@
                 "domain-specific",
                 "text analysis"
               ]
-            },
-            {
-              "name": "WorldView-Bench",
-              "description": "A Benchmark for Evaluating Global Cultural Perspectives in Large Language Models",
-              "paper": "https://arxiv.org/abs/2505.09595",
-              "year": 2025,
-              "tags": [
-                "cultural perspectives",
-                "global",
-                "multilingual",
-                "bias evaluation",
-                "social understanding"
-              ]
-            },
-            {
-              "name": "Spider 2.0",
-              "description": "Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
-              "website": "https://spider2-sql.github.io/",
-              "paper": "https://arxiv.org/abs/2411.07763",
-              "code": "https://github.com/xlang-ai/Spider2",
-              "year": 2025,
-              "tags": [
-                "text-to-sql",
-                "database",
-                "query generation",
-                "enterprise",
-                "real-world"
-              ]
-            },
+            }
+          ]
+        },
+        {
+          "name": "Agriculture",
+          "benchmarks": [
             {
               "name": "AgroBench",
               "description": "Vision-Language Model Benchmark in Agriculture",
@@ -768,6 +760,24 @@
                 "domain-specific",
                 "agricultural applications",
                 "multimodal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cultural & Social Understanding",
+          "benchmarks": [
+            {
+              "name": "WorldView-Bench",
+              "description": "A Benchmark for Evaluating Global Cultural Perspectives in Large Language Models",
+              "paper": "https://arxiv.org/abs/2505.09595",
+              "year": 2025,
+              "tags": [
+                "cultural perspectives",
+                "global",
+                "multilingual",
+                "bias evaluation",
+                "social understanding"
               ]
             }
           ]
@@ -1653,5 +1663,5 @@
       ]
     }
   ],
-  "lastUpdated": "2025-08-10T14:33:39.415Z"
+  "lastUpdated": "2025-08-10T14:41:05.926Z"
 }
