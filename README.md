@@ -18,8 +18,10 @@ A curated list of AI benchmarks across various domains including Natural Languag
     - [Video Understanding](#video-understanding)
     - [Multimodal Evaluation](#multimodal-evaluation)
     - [OCR & Document Understanding](#ocr--document-understanding)
-  - [Legal & Domain-Specific](#legal--domain-specific)
+  - [Domain-Specific](#domain-specific)
     - [Legal Reasoning](#legal-reasoning)
+    - [Agriculture](#agriculture)
+    - [Cultural & Social Understanding](#cultural--social-understanding)
   - [Agent Capabilities & Reasoning](#agent-capabilities--reasoning)
     - [Long-term Coherence](#long-term-coherence)
     - [Scientific & Academic Reasoning](#scientific--academic-reasoning)
@@ -36,10 +38,10 @@ A curated list of AI benchmarks across various domains including Natural Languag
 
 ## 📊 Statistics
 
-- **Total Benchmarks**: 104
+- **Total Benchmarks**: 105
 - **Categories**: 5
 - **Subcategories**: 19
-- **Last Updated**: 2025-08-02
+- **Last Updated**: 2025-08-10
 
 ## 🚀 Website
 
@@ -169,6 +171,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Paper: https://arxiv.org/abs/2412.18702
   - Year: 2024
   - Tags: database, knowledge graphs, cypher, query generation, retrieval
+
+- **Spider 2.0** - Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows
+  - Website: https://spider2-sql.github.io/
+  - Paper: https://arxiv.org/abs/2411.07763
+  - Code: https://github.com/xlang-ai/Spider2
+  - Year: 2025
+  - Tags: text-to-sql, database, query generation, enterprise, real-world
 
 ### Multimodal & Vision
 
@@ -363,7 +372,7 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: ocr, optical character recognition, text recognition, document processing, evaluation
 
-### Legal & Domain-Specific
+### Domain-Specific
 
 #### Legal Reasoning
 - **LEXam** - Benchmarking Legal Reasoning on 340 Law Exams from Swiss, EU, and international law examinations
@@ -378,24 +387,19 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: legal reasoning, case law, legal analysis, domain-specific, text analysis
 
-- **WorldView-Bench** - A Benchmark for Evaluating Global Cultural Perspectives in Large Language Models
-  - Paper: https://arxiv.org/abs/2505.09595
-  - Year: 2025
-  - Tags: cultural perspectives, global, multilingual, bias evaluation, social understanding
-
-- **Spider 2.0** - Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows
-  - Website: https://spider2-sql.github.io/
-  - Paper: https://arxiv.org/abs/2411.07763
-  - Code: https://github.com/xlang-ai/Spider2
-  - Year: 2025
-  - Tags: text-to-sql, database, query generation, enterprise, real-world
-
+#### Agriculture
 - **AgroBench** - Vision-Language Model Benchmark in Agriculture
   - Website: https://dahlian00.github.io/AgroBenchPage/
   - Paper: https://arxiv.org/abs/2507.20519
   - Code: https://github.com/dahlian00/AgroBench/tree/main
   - Year: 2025
   - Tags: agriculture, vision-language, domain-specific, agricultural applications, multimodal
+
+#### Cultural & Social Understanding
+- **WorldView-Bench** - A Benchmark for Evaluating Global Cultural Perspectives in Large Language Models
+  - Paper: https://arxiv.org/abs/2505.09595
+  - Year: 2025
+  - Tags: cultural perspectives, global, multilingual, bias evaluation, social understanding
 
 ### Agent Capabilities & Reasoning
 
