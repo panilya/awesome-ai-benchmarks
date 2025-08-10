@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { Header } from '@/components/Header';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,6 +37,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Awesome AI Benchmarks',
     description: 'A curated collection of AI benchmarks across Natural Language Processing, Computer Vision, and Multimodal tasks.',
@@ -142,6 +154,7 @@ export default async function RootLayout({
       <body className={`${inter.className} antialiased bg-secondary text-secondary-foreground`}>
         <ThemeProvider>
           <div className="min-h-screen flex flex-col">
+            <Header />
             {children}
           </div>
         </ThemeProvider>

@@ -96,7 +96,7 @@ export default function SearchFilter({
           placeholder="Search benchmarks by name, description, category, or tags..."
           value={filters.search || ''}
           onChange={(e) => handleSearchChange(e.target.value)}
-          className="w-full pl-10 pr-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent bg-background text-foreground placeholder-muted-foreground"
+          className="w-full pl-10 pr-4 py-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring bg-background text-foreground placeholder-muted-foreground"
         />
       </div>
 
@@ -153,7 +153,7 @@ export default function SearchFilter({
       <div className="flex items-center justify-between">
         <button
           onClick={() => setShowAdvanced(!showAdvanced)}
-          className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
         >
           <Filter size={16} />
           Advanced Filters
@@ -223,7 +223,7 @@ export default function SearchFilter({
                   type="checkbox"
                   checked={filters.hasCode || false}
                   onChange={(e) => onFiltersChange({ ...filters, hasCode: e.target.checked || undefined })}
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  className="rounded border-input text-primary focus:ring-2 focus:ring-ring"
                 />
                 <Code size={16} className="text-green-600" />
                 <span className="text-sm text-foreground">Has Code</span>
@@ -234,7 +234,7 @@ export default function SearchFilter({
                   type="checkbox"
                   checked={filters.hasWebsite || false}
                   onChange={(e) => onFiltersChange({ ...filters, hasWebsite: e.target.checked || undefined })}
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  className="rounded border-input text-primary focus:ring-2 focus:ring-ring"
                 />
                 <Globe size={16} className="text-purple-600" />
                 <span className="text-sm text-foreground">Has Website</span>
@@ -257,7 +257,7 @@ export default function SearchFilter({
                       onClick={() => handleTagToggle(tag)}
                       className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
                         isSelected
-                          ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
+                          ? 'bg-primary/10 text-primary border-primary/20'
                           : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                       }`}
                     >

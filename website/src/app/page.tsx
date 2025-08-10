@@ -26,11 +26,11 @@ export default function HomePage() {
           throw new Error(`Failed to load data: ${response.statusText}`);
         }
         const rawData = await response.json();
-        
+
         // Transform nested structure to flat structure
         const flatBenchmarks: any[] = [];
         let benchmarkId = 1;
-        
+
         rawData.categories.forEach((category: any) => {
           category.subcategories.forEach((subcategory: any) => {
             subcategory.benchmarks.forEach((benchmark: any) => {
@@ -39,14 +39,14 @@ export default function HomePage() {
                 id: `benchmark-${benchmarkId++}`,
                 category: category.name,
                 subcategory: subcategory.name,
-                metrics: typeof benchmark.metrics === 'string' 
+                metrics: typeof benchmark.metrics === 'string'
                   ? benchmark.metrics.split(',').map((m: string) => m.trim())
                   : benchmark.metrics || []
               });
             });
           });
         });
-        
+
         // Create the expected ParsedReadme structure
         const transformedData = {
           benchmarks: flatBenchmarks,
@@ -61,7 +61,7 @@ export default function HomePage() {
           totalCount: flatBenchmarks.length,
           lastUpdated: new Date().toISOString()
         };
-        
+
         setBenchmarkData(transformedData);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load benchmark data');
@@ -236,7 +236,97 @@ export default function HomePage() {
 
   return (
     <>
-      <Header stats={stats} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+        <div className="text-center mb-16">
+          <h1 className="section-heading mb-6">Awesome AI Benchmarks</h1>
+          <p className="section-description mb-10">
+            A curated collection of AI benchmarks across multiple domains. Discover and explore the most important benchmarks in AI research.
+          </p>
+
+          {/* Stats Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+            <div className="modern-card p-6 flex flex-col items-center justify-center">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                {stats.totalBenchmarks}
+              </div>
+              <div className="text-muted-foreground text-sm">
+                Benchmarks
+              </div>
+            </div>
+
+            <div className="modern-card p-6 flex flex-col items-center justify-center">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                {stats.totalCategories}
+              </div>
+              <div className="text-muted-foreground text-sm">
+                Categories
+              </div>
+            </div>
+
+            <div className="modern-card p-6 flex flex-col items-center justify-center">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                {stats.totalSubcategories}
+              </div>
+              <div className="text-muted-foreground text-sm">
+                Subcategories
+              </div>
+            </div>
+
+            <div className="modern-card p-6 flex flex-col items-center justify-center">
+              <div className="text-lg md:text-xl font-bold text-primary mb-2 text-center leading-tight">
+                {stats.topCategory.name}
+              </div>
+              <div className="text-muted-foreground text-sm">
+                Top Domain
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/categories"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
+            >
+              <svg
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                />
+              </svg>
+              Browse by Categories
+            </a>
+
+            <a
+              href="/subcategories"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
+            >
+              <svg
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                />
+              </svg>
+              Browse by Subcategories
+            </a>
+          </div>
+        </div>
+      </div>
 
       <main className="flex-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -260,7 +350,7 @@ export default function HomePage() {
               </p>
               <button
                 onClick={() => handleFiltersChange({})}
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="btn-primary"
               >
                 Clear All Filters
               </button>
