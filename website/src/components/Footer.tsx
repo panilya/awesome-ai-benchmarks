@@ -140,7 +140,7 @@ export default function Footer({ onCategoryClick }: FooterProps = {}) {
                   href="https://github.com/panilya/awesome-ai-benchmarks/blob/main/CONTRIBUTING.md#adding-new-categories"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  className="text-primary hover:text-primary/80 transition-colors"
                 >
                   Suggest new category
                 </a>
