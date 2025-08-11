@@ -164,39 +164,39 @@ export default function SubcategoriesPage() {
   return (
     <>
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <div className="text-center mb-4">
-          <h1 className="section-heading mb-6">Benchmark Subcategories</h1>
-          <p className="section-description mb-10">
+          <h1 className="section-heading mb-3 md:mb-6">Benchmark Subcategories</h1>
+          <p className="section-description mb-6 md:mb-10 px-4 md:px-0">
             Explore specific subcategories to find highly targeted benchmarks for your evaluation needs.
             Each subcategory represents a specialized area within broader benchmark categories.
           </p>
 
           {/* Subcategory Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8 max-w-2xl mx-auto">
-            <div className="modern-card p-6 flex flex-col items-center justify-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 mt-4 md:mt-8 max-w-2xl mx-auto">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                 {allSubcategories.length}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Subcategories
               </div>
             </div>
 
-            <div className="modern-card p-6 flex flex-col items-center justify-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                 {benchmarkData.categories.length}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Parent Categories
               </div>
             </div>
 
-            <div className="modern-card p-6 flex flex-col items-center justify-center col-span-2 md:col-span-1">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center col-span-2 md:col-span-1">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                 {benchmarkData.totalCount}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Total Benchmarks
               </div>
             </div>

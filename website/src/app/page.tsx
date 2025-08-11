@@ -235,59 +235,59 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <div className="text-center mb-4">
-          <h1 className="section-heading mb-6">Awesome AI Benchmarks</h1>
-          <p className="section-description mb-10">
+          <h1 className="section-heading mb-3 md:mb-6">Awesome AI Benchmarks</h1>
+          <p className="section-description mb-6 md:mb-10 px-4 md:px-0">
             A curated collection of AI benchmarks across multiple domains. Discover and explore the most important benchmarks in AI research.
           </p>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-            <div className="modern-card p-6 flex flex-col items-center justify-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mt-4 md:mt-8">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                 {stats.totalBenchmarks}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Benchmarks
               </div>
             </div>
 
-            <div className="modern-card p-6 flex flex-col items-center justify-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                 {stats.totalCategories}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Categories
               </div>
             </div>
 
-            <div className="modern-card p-6 flex flex-col items-center justify-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                 {stats.totalSubcategories}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Subcategories
               </div>
             </div>
 
-            <div className="modern-card p-6 flex flex-col items-center justify-center">
-              <div className="text-lg md:text-xl font-bold text-primary mb-2 text-center leading-tight">
+            <div className="modern-card p-3 md:p-6 flex flex-col items-center justify-center">
+              <div className="text-sm md:text-lg lg:text-xl font-bold text-primary mb-1 md:mb-2 text-center leading-tight">
                 {stats.topCategory.name}
               </div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-muted-foreground text-xs md:text-sm">
                 Top Domain
               </div>
             </div>
           </div>
 
-          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-6 md:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4 md:px-0">
             <a
               href="/categories"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-colors shadow-lg hover:shadow-xl"
             >
               <svg
-                className="h-5 w-5"
+                className="h-4 w-4 md:h-5 md:w-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -305,10 +305,10 @@ export default function HomePage() {
 
             <a
               href="/subcategories"
-              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl border-2 border-primary"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-colors shadow-lg hover:shadow-xl border-2 border-primary"
             >
               <svg
-                className="h-5 w-5"
+                className="h-4 w-4 md:h-5 md:w-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
