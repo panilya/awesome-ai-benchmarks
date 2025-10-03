@@ -376,6 +376,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: ocr, optical character recognition, text recognition, document processing, evaluation
 
+- **Benchmark: Testing AI Models On Engineering Drawings** - An evaluation of leading AI models on their ability to extract dimensional and tolerance data from real-world mechanical engineering drawings.
+  - Paper: https://businesswaretech.com/blog/benchmark-testing-ai-models-on-engineering-drawings/
+  - Code: https://github.com/grif-bwt-org/benchmark_idp
+  - Year: 2025
+  - Metrics: Dimension Recognition Accuracy
+  - Tags: benchmark, ai models, engineering drawings, dimension extraction, text extraction, multimodal
+
 ### Translation & Multilingual
 
 #### General Translation Evaluation
