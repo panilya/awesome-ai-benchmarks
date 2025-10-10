@@ -380,7 +380,6 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Paper: https://businesswaretech.com/blog/benchmark-testing-ai-models-on-engineering-drawings/
   - Code: https://github.com/grif-bwt-org/benchmark_idp
   - Year: 2025
-  - Metrics: Dimension Recognition Accuracy
   - Tags: benchmark, ai models, engineering drawings, dimension extraction, text extraction, multimodal
 
 ### Translation & Multilingual
