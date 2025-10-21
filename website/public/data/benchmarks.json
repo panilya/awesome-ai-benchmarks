@@ -703,6 +703,21 @@
                 "document processing",
                 "evaluation"
               ]
+            },
+            {
+              "name": "Benchmark: Testing AI Models On Engineering Drawings",
+              "description": "An evaluation of leading AI models on their ability to extract dimensional and tolerance data from real-world mechanical engineering drawings.",
+              "paper": "https://businesswaretech.com/blog/benchmark-testing-ai-models-on-engineering-drawings/",
+              "code": "https://github.com/grif-bwt-org/benchmark_idp",
+              "year": 2025,
+              "tags": [
+                "benchmark",
+                "ai models",
+                "engineering drawings",
+                "dimension extraction",
+                "text extraction",
+                "multimodal"
+              ]
             }
           ]
         }
@@ -1794,5 +1809,5 @@
       ]
     }
   ],
-  "lastUpdated": "2025-08-11T07:34:25.693Z"
+  "lastUpdated": "2025-10-21T07:08:56.902Z"
 }
