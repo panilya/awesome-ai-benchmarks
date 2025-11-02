@@ -467,7 +467,7 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Paper: https://arxiv.org/pdf/2506.03828
   - Code: https://github.com/IBM/AssetOpsBench
   - Year: 2025
-  - Metrics: Task completition, Data Retreival, Result Verification, Action Sequence, Clarity and Justification, Hallucination Rate 
+  - Metrics: Task Completion, Data Retrieval, Result Verification, Action Sequence, Clarity and Justification, Hallucination Rate 
   - Tags: time series, data centers (Air Handeling Units, Chillers), multi agents 
 
 ### Agent Capabilities & Reasoning
