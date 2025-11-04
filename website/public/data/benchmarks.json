@@ -927,6 +927,25 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Industry 4.0 Applications",
+          "benchmarks": [
+            {
+              "name": "AssetOpsBench",
+              "description": "A Benchmark for developing, orchestrating, and evaluating domain-specific AI agents in industrial asset operations and maintenance",
+              "paper": "https://arxiv.org/pdf/2506.03828",
+              "code": "https://github.com/IBM/AssetOpsBench",
+              "year": 2025,
+              "metrics": "Task Completion, Data Retrieval, Result Verification, Action Sequence, Clarity and Justification, Hallucination Rate",
+              "tags": [
+                "time series",
+                "data centers (Air Handeling Units",
+                "Chillers)",
+                "multi agents"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1809,5 +1828,5 @@
       ]
     }
   ],
-  "lastUpdated": "2025-10-21T07:08:56.902Z"
+  "lastUpdated": "2025-11-04T17:24:56.509Z"
 }
