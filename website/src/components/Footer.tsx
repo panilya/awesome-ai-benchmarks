@@ -167,6 +167,18 @@ export default function Footer({ onCategoryClick }: FooterProps = {}) {
                 View raw data
               </a>
             </div>
+
+            <div className="text-center text-xs text-muted-foreground">
+              Sponsored by{' '}
+              <a
+                href="https://allscreenshots.com/"
+                target="_blank"
+                rel="noopener"
+                className="text-primary hover:text-primary/80"
+              >
+                Allscreenshots.com - Fast and reliable screenshot API
+              </a>
+            </div>
           </div>
         </div>
       </div>
