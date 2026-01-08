@@ -42,10 +42,10 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
 
 ## 📊 Statistics
 
-- **Total Benchmarks**: 113
+- **Total Benchmarks**: 114
 - **Categories**: 6
 - **Subcategories**: 24
-- **Last Updated**: 2025-08-10
+- **Last Updated**: 2026-01-08
 
 ## 🚀 Website
 
@@ -149,6 +149,12 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Paper: https://arxiv.org/abs/2505.16135
   - Year: 2025
   - Tags: logical reasoning, puzzle solving, constraint satisfaction, game, challenging
+ 
+- **NonoBench** - A benchmark suite for evaluating LLM performance on Nonogram (Picross) puzzle solving across different grid sizes
+  - Website: https://www.nonobench.com/
+  - Code: https://github.com/mauricekleine/nono-bench
+  - Year: 2026
+  - Tags: puzzle solving, nonogram, logical reasoning, grid puzzles, picross
 
 - **Tests as Prompt** - A Test-Driven-Development Benchmark for LLM Code Generation
   - Paper: https://arxiv.org/abs/2505.09027
