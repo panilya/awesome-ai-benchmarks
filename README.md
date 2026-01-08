@@ -152,6 +152,7 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
  
 - **NonoBench** - A benchmark suite for evaluating LLM performance on Nonogram (Picross) puzzle solving across different grid sizes
   - Website: https://www.nonobench.com/
+  - Leaderboard: https://www.nonobench.com/
   - Code: https://github.com/mauricekleine/nono-bench
   - Year: 2026
   - Tags: puzzle solving, nonogram, logical reasoning, grid puzzles, picross
