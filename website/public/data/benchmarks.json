@@ -211,6 +211,21 @@
               ]
             },
             {
+              "name": "NonoBench",
+              "description": "A benchmark suite for evaluating LLM performance on Nonogram (Picross) puzzle solving across different grid sizes",
+              "website": "https://www.nonobench.com/",
+              "leaderboard": "https://www.nonobench.com/",
+              "code": "https://github.com/mauricekleine/nono-bench",
+              "year": 2026,
+              "tags": [
+                "puzzle solving",
+                "nonogram",
+                "logical reasoning",
+                "grid puzzles",
+                "picross"
+              ]
+            },
+            {
               "name": "Tests as Prompt",
               "description": "A Test-Driven-Development Benchmark for LLM Code Generation",
               "paper": "https://arxiv.org/abs/2505.09027",
@@ -1828,5 +1843,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-01-05T17:24:39.355Z"
+  "lastUpdated": "2026-01-16T07:40:06.296Z"
 }
