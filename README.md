@@ -190,6 +190,14 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: text-to-sql, database, query generation, enterprise, real-world
 
+- **BIRD** - A comprehensive benchmark for large-scale database grounded text-to-SQL evaluation with 12,751+ question-SQL pairs across 95 databases spanning 37 professional domains
+  - Paper: https://arxiv.org/abs/2305.03111
+  - Website: https://bird-bench.github.io/
+  - Code: https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird
+  - Leaderboard: https://bird-bench.github.io/
+  - Year: 2023
+  - Tags: text-to-sql, database, query generation, large-scale, real-world
+
 ### Multimodal & Vision
 
 #### Video Understanding
@@ -847,18 +855,18 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: reward models, process-level evaluation, fine-grained evaluation, challenging, rlhf
 
-- **AHA Leaderboard** - AI — Human alignment
+- **AHA Leaderboard** - AI - Human alignment
   - Website: https://huggingface.co/blog/etemiz/aha-leaderboard
   - Leaderboard: https://sheet.zoho.com/sheet/open/mz41j09cc640a29ba47729fed784a263c1d08
   - Year: 2025
   - Tags: alignment, safety, beneficial, factuality, reality
 
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Acknowledgments
+## Acknowledgments
 
 - Thanks to all the researchers and organizations who created these benchmarks
 - Inspired by other "awesome" lists in the open source community
