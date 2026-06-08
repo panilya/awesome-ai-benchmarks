@@ -727,6 +727,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: bias evaluation, implicit bias, fairness, social bias, verification
 
+
+- **TWZRD Agent Intel** - Trust scoring and wallet identity verification for AI agents. Free MCP tool used in multi-agent benchmark environments to verify agent wallet identity in simulation scenarios involving payments or autonomous decision-making.
+  - Website: https://intel.twzrd.xyz
+  - MCP Config: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
+  - Year: 2025
+  - Tags: agent identity, trust scoring, wallet verification, multi-agent, x402, solana
+
 #### Business & CRM
 - **CRMArena-Pro** - Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions
   - Paper: https://arxiv.org/abs/2505.18878
