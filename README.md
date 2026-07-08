@@ -1,6 +1,6 @@
 # Awesome AI Benchmarks [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-A curated list of 100+ AI benchmarks across various domains including Agent Capabilities, Reasoning, Translation, Code Generation, Multimodal, and other AI domains. This repository automatically generates a searchable website at [aibenchmarks.net](https://aibenchmarks.net/) from the benchmark entries below.
+A curated list of 100+ AI benchmarks across various domains including Agent Capabilities, Reasoning, Translation, Code Generation, Multimodal, and other AI domains.
 
 ## 📋 Table of Contents
 
@@ -50,8 +50,6 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
 ## 🚀 Website
 
 Visit our automatically generated website for a better browsing experience with search, filtering, and detailed benchmark information.
-
-**🌐 [https://aibenchmarks.net](https://aibenchmarks.net/)**
 
 ## 📝 Contributing
 
