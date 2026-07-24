@@ -42,7 +42,7 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
 
 ## 📊 Statistics
 
-- **Total Benchmarks**: 114
+- **Total Benchmarks**: 115
 - **Categories**: 6
 - **Subcategories**: 24
 - **Last Updated**: 2026-01-08
@@ -548,6 +548,15 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Code: https://github.com/sylinrl/TruthfulQA
   - Year: 2021
   - Tags: truthfulness, factuality, misinformation, evaluation, bias detection
+
+- **REFUTE** - Judge-free benchmark for scientific critique and epistemic calibration on recent science paper summaries; separates critique skill from calibrated honesty (overclaims, missing-evidence refusal, planted-flaw detection)
+  - Paper: https://github.com/connerlambden/refute-inspect/releases/tag/v3.0.0-preprint
+  - Code: https://github.com/connerlambden/refute-inspect
+  - Website: https://bgpt.pro/refute
+  - Leaderboard: https://huggingface.co/spaces/BGPT-OFFICIAL/refute-leaderboard
+  - Year: 2026
+  - Metrics: Truth Score, critique skill, Brier calibration, forced-choice accuracy, planted-flaw discrimination
+  - Tags: scientific critique, epistemic calibration, judge-free, overclaim detection, uncertainty honesty, science summaries
 
 - **MathChat** - Benchmarking Mathematical Reasoning and Instruction Following in Multi-Turn Interactions
   - Code: https://github.com/Zhenwen-NLP/MathChat
