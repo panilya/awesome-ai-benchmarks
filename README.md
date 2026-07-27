@@ -306,6 +306,14 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Tags: video captioning, text-to-video, controllable generation, comprehensive, evaluation
 
 #### Multimodal Evaluation
+- **StructEval** - Benchmarking LLMs' structured-output generation and conversion across 18 text and visual formats; StructEval-V evaluates renderable HTML, React, SVG, Canvas, and visualization-code outputs with structural and VQA checks
+  - Paper: https://arxiv.org/abs/2505.20139
+  - Code: https://github.com/TIGER-AI-Lab/StructEval
+  - Website: https://tiger-ai-lab.github.io/StructEval/
+  - Dataset: https://huggingface.co/datasets/TIGER-Lab/StructEval
+  - Year: 2025
+  - Tags: structured output, visual generation, multimodal, evaluation, benchmark
+
 - **MLLM-as-a-Judge** - Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark
   - Paper: https://arxiv.org/abs/2402.04788
   - Website: https://mllm-judge.github.io/
