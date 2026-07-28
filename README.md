@@ -744,6 +744,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: bias evaluation, implicit bias, fairness, social bias, verification
 
+- **BenchClaw** - 10-dimension benchmark suite for evaluating AI agent capabilities including reasoning, knowledge, creativity, coding, ethics, efficiency, robustness, communication, collaboration, and adaptability
+  - Code: https://github.com/Agnuxo1/benchclaw
+  - Website: https://benchclaw.vercel.app/
+  - Paper: https://arxiv.org/pdf/2604.19792
+  - Year: 2026
+  - Tags: agent evaluation, multi-dimension, scientific reasoning, tribunal scoring, peer review
+
 #### Business & CRM
 - **CRMArena-Pro** - Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions
   - Paper: https://arxiv.org/abs/2505.18878
