@@ -30,6 +30,7 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
     - [Long-term Coherence](#long-term-coherence)
     - [Scientific & Academic Reasoning](#scientific--academic-reasoning)
     - [Security & Robustness](#security--robustness)
+    - [Reliability & Reproducibility](#reliability--reproducibility)
     - [Business & CRM](#business--crm)
     - [World Modeling & Simulation](#world-modeling--simulation)
     - [Game & Interactive](#game--interactive)
@@ -42,10 +43,10 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
 
 ## 📊 Statistics
 
-- **Total Benchmarks**: 114
+- **Total Benchmarks**: 118
 - **Categories**: 6
-- **Subcategories**: 24
-- **Last Updated**: 2026-01-08
+- **Subcategories**: 25
+- **Last Updated**: 2026-07-05
 
 ## 🚀 Website
 
@@ -743,6 +744,14 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Paper: https://arxiv.org/pdf/2505.10013
   - Year: 2025
   - Tags: bias evaluation, implicit bias, fairness, social bias, verification
+
+#### Reliability & Reproducibility
+- **ContextBenchmark** - Open, vendor-neutral benchmark measuring the reliability, reproducibility, and determinism of AI context systems (retrieval indexes, RAG pipelines, agent memory, and code-context engines) through rebuild-identity, query-stability, drift-under-noise, and cross-machine identity tests, graded as Context Trust Levels (CTL 0-4) with verifiable per-adapter fingerprints
+  - Website: https://contextbenchmark.com
+  - Code: https://github.com/aabhisrv/contextbenchmark
+  - Year: 2026
+  - Metrics: Exact-Match Rate, Jaccard@k, Kendall tau, Drift score, Artifact hash (SHA-256), Context Trust Level (CTL 0-4)
+  - Tags: reproducibility, determinism, reliability, retrieval, rag, agent-memory, code-context, fingerprint
 
 #### Business & CRM
 - **CRMArena-Pro** - Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions
