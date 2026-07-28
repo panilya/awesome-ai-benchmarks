@@ -45,7 +45,7 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
 - **Total Benchmarks**: 114
 - **Categories**: 6
 - **Subcategories**: 24
-- **Last Updated**: 2026-01-08
+- **Last Updated**: 2026-07-28
 
 ## 🚀 Website
 
