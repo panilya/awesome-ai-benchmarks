@@ -1560,6 +1560,21 @@
                 "social bias",
                 "verification"
               ]
+            },
+            {
+              "name": "BenchClaw",
+              "description": "10-dimension benchmark suite for evaluating AI agent capabilities including reasoning, knowledge, creativity, coding, ethics, efficiency, robustness, communication, collaboration, and adaptability",
+              "code": "https://github.com/Agnuxo1/benchclaw",
+              "website": "https://benchclaw.vercel.app/",
+              "paper": "https://arxiv.org/pdf/2604.19792",
+              "year": 2026,
+              "tags": [
+                "agent evaluation",
+                "multi-dimension",
+                "scientific reasoning",
+                "tribunal scoring",
+                "peer review"
+              ]
             }
           ]
         },
@@ -1895,5 +1910,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-07-28T06:57:37.852Z"
+  "lastUpdated": "2026-07-28T06:59:50.248Z"
 }
