@@ -493,6 +493,17 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
 
 ### Agent Capabilities & Reasoning
 
+#### Web Agents
+
+- **ClawBench** - Live-website browser agent benchmark with two-stage scoring (HTTP-request interception + LLM judge on payload)
+  - Code: https://github.com/reacher-z/ClawBench
+  - Paper: https://arxiv.org/abs/2604.08523
+  - Website: https://claw-bench.com
+  - Dataset: https://huggingface.co/datasets/NAIL-Group/ClawBench
+  - Year: 2026
+  - Tags: web agent, browser agent, live websites, interception, LLM judge, real-world tasks
+
+
 #### Swarm Intelligence
 - **SwarmBench** - Benchmarking LLMs' Swarm Intelligence
   - Code: https://github.com/RUC-GSAI/YuLan-SwarmIntell
