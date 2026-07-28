@@ -553,6 +553,21 @@
           "name": "Multimodal Evaluation",
           "benchmarks": [
             {
+              "name": "StructEval",
+              "description": "Benchmarking LLMs' structured-output generation and conversion across 18 text and visual formats; StructEval-V evaluates renderable HTML, React, SVG, Canvas, and visualization-code outputs with structural and VQA checks",
+              "paper": "https://arxiv.org/abs/2505.20139",
+              "code": "https://github.com/TIGER-AI-Lab/StructEval",
+              "website": "https://tiger-ai-lab.github.io/StructEval/",
+              "year": 2025,
+              "tags": [
+                "structured output",
+                "visual generation",
+                "multimodal",
+                "evaluation",
+                "benchmark"
+              ]
+            },
+            {
               "name": "MLLM-as-a-Judge",
               "description": "Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark",
               "paper": "https://arxiv.org/abs/2402.04788",
@@ -1859,5 +1874,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-07-08T17:28:51.810Z"
+  "lastUpdated": "2026-07-28T06:55:49.815Z"
 }
