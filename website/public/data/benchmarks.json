@@ -999,6 +999,27 @@
       "name": "Agent Capabilities & Reasoning",
       "subcategories": [
         {
+          "name": "Web Agents",
+          "benchmarks": [
+            {
+              "name": "ClawBench",
+              "description": "Live-website browser agent benchmark with two-stage scoring (HTTP-request interception + LLM judge on payload)",
+              "code": "https://github.com/reacher-z/ClawBench",
+              "paper": "https://arxiv.org/abs/2604.08523",
+              "website": "https://claw-bench.com",
+              "year": 2026,
+              "tags": [
+                "web agent",
+                "browser agent",
+                "live websites",
+                "interception",
+                "LLM judge",
+                "real-world tasks"
+              ]
+            }
+          ]
+        },
+        {
           "name": "Swarm Intelligence",
           "benchmarks": [
             {
@@ -1874,5 +1895,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-07-28T06:55:49.815Z"
+  "lastUpdated": "2026-07-28T06:57:37.852Z"
 }
