@@ -236,6 +236,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2024
   - Tags: video generation, generative models, comprehensive, evaluation, benchmark suite
 
+- **VideoScore2** - Interpretable generated-video evaluation across visual quality, text-video alignment, and physical/common-sense consistency
+  - Paper: https://arxiv.org/abs/2509.22799
+  - Code: https://github.com/TIGER-AI-Lab/VideoScore2
+  - Year: 2025
+  - Metrics: visual quality, text-video alignment, physical/common-sense consistency
+  - Tags: video generation, evaluation, generated video, interpretable, benchmark
+
 - **VBench-2.0** - Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness
   - Code: https://github.com/Vchitect/VBench/tree/master/VBench-2.0
   - Website: https://vchitect.github.io/VBench-2.0-project/
