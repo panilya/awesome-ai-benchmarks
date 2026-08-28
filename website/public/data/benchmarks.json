@@ -407,6 +407,21 @@
               ]
             },
             {
+              "name": "VideoScore2",
+              "description": "Interpretable generated-video evaluation across visual quality, text-video alignment, and physical/common-sense consistency",
+              "paper": "https://arxiv.org/abs/2509.22799",
+              "code": "https://github.com/TIGER-AI-Lab/VideoScore2",
+              "year": 2025,
+              "metrics": "visual quality, text-video alignment, physical/common-sense consistency",
+              "tags": [
+                "video generation",
+                "evaluation",
+                "generated video",
+                "interpretable",
+                "benchmark"
+              ]
+            },
+            {
               "name": "VBench-2.0",
               "description": "Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness",
               "code": "https://github.com/Vchitect/VBench/tree/master/VBench-2.0",
@@ -1910,5 +1925,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-07-28T07:01:17.908Z"
+  "lastUpdated": "2026-08-28T21:21:56.395Z"
 }
