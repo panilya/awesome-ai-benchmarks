@@ -140,6 +140,12 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: terminal, command line, agent interaction, environment, system administration
 
+- **YYLO Benchmark** - Longitudinal evaluation and immutable evidence for agent runs; every candidate executes in a dedicated fresh-repository workspace behind a selective filesystem sandbox, and retained evidence is scored by ordered deterministic and/or LLM profiles with hash-verified attempt receipts and repository manifests
+  - Code: https://github.com/yylo-dev/yylo-benchmark
+  - Website: https://yylo.dev
+  - Year: 2026
+  - Tags: agent evaluation, terminal, git, evidence, reproducibility, LLM judge, sandbox
+
 #### Logic & Reasoning
 - **Sudoku-Bench** - Benchmark testing logical reasoning capabilities through Sudoku puzzle solving
   - Code: https://github.com/SakanaAI/Sudoku-Bench
