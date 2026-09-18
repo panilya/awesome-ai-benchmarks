@@ -16,6 +16,7 @@ A curated list of 100+ AI benchmarks across various domains including Agent Capa
     - [Database & Query](#database--query)
   - [Multimodal & Vision](#multimodal--vision)
     - [Video Understanding](#video-understanding)
+    - [Image Generation](#image-generation)
     - [Multimodal Evaluation](#multimodal-evaluation)
     - [OCR & Document Understanding](#ocr--document-understanding)
   - [Translation & Multilingual](#translation--multilingual)
@@ -311,6 +312,15 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Leaderboard: https://github.com/VidCapBench/VidCapBench?tab=readme-ov-file#-experimental-results
   - Year: 2025
   - Tags: video captioning, text-to-video, controllable generation, comprehensive, evaluation
+
+#### Image Generation
+- **ImageBench V1** - Prompt-adherence leaderboard for text-to-image models. Same prompts run across 60+ frontier models (Flux 2 Max, Nano Banana Pro, Seedream V4, Reve 2.1, Imagen 4 Ultra, Qwen Image 2.0 Pro, and more) and judged by a VLM panel. Includes side-by-side head-to-head comparisons for every model pair.
+  - Website: https://imagebench.ai/imagebench-v1
+  - Methodology: https://imagebench.ai/imagebench-v1/methodology
+  - Compare: https://imagebench.ai/imagebench-v1/compare
+  - Dataset: https://huggingface.co/datasets/dh7/imagebench
+  - Year: 2026
+  - Tags: text-to-image, image generation, prompt adherence, vlm-judge, leaderboard, benchmark
 
 #### Multimodal Evaluation
 - **StructEval** - Benchmarking LLMs' structured-output generation and conversion across 18 text and visual formats; StructEval-V evaluates renderable HTML, React, SVG, Canvas, and visualization-code outputs with structural and VQA checks
