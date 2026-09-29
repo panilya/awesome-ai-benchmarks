@@ -148,10 +148,10 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: logical reasoning, puzzle solving, constraint satisfaction, game, challenging
  
-- **NonoBench** - A benchmark suite for evaluating LLM performance on Nonogram (Picross) puzzle solving across different grid sizes
+- **Nonobench** - An open-source benchmark of how well LLMs solve nonogram (picross) puzzles, from 5x5 to 20x20
   - Website: https://www.nonobench.com/
   - Leaderboard: https://www.nonobench.com/
-  - Code: https://github.com/mauricekleine/nono-bench
+  - Code: https://github.com/mauricekleine/nonobench
   - Year: 2026
   - Tags: puzzle solving, nonogram, logical reasoning, grid puzzles, picross
 
