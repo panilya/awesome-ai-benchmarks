@@ -901,3 +901,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to all the researchers and organizations who created these benchmarks
 - Inspired by other "awesome" lists in the open source community
+
+
+## Judgment & Analysis
+- **[modelbenchmark.io](https://modelbenchmark.io)** - Independent AI model rankings for 208 models across 16 public benchmarks
