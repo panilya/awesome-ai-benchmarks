@@ -847,6 +847,13 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Tags: episodic memory, memory evaluation, context memory, cognitive abilities, challenging
 
 #### Creative Writing
+- **ShortForm-Bench** - Whether AI models can write short-form video scripts that the creators would film. 25 creators rated 1,750 scripts for their own channels
+  - Paper: https://doi.org/10.5281/zenodo.24429580
+  - Code: https://github.com/dcue3/shortform-bench
+  - Website: https://davidcue.com/shortform-bench/
+  - Year: 2026
+  - Tags: short-form video, scriptwriting, creative writing, human evaluation, text generation
+
 - **Longform Creative Writing** - Benchmark for evaluating long-form creative writing capabilities
   - Website: https://eqbench.com/creative_writing_longform.html
   - Year: 2024
