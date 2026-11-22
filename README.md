@@ -490,6 +490,11 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: cultural perspectives, global, multilingual, bias evaluation, social understanding
 
+- **Cross-Task Dissociation** - Evaluates Theory of Mind (ToM) in frontier vision-language models with the Keysar Director Task and the Frith-Happé triangles; no model is close to typical humans on both tasks
+  - Paper: https://arxiv.org/abs/2608.00261
+  - Year: 2026
+  - Tags: theory of mind, vision-language, social intelligence, multimodal, evaluation
+
 #### Industry 4.0 Applications
 - **AssetOpsBench** - A Benchmark for developing, orchestrating, and evaluating domain-specific AI agents in industrial asset operations and maintenance
   - Paper: https://arxiv.org/pdf/2506.03828
