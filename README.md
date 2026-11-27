@@ -532,6 +532,12 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
   - Year: 2025
   - Tags: autonomous agents, long-term coherence, agent behavior, consistency, challenging
 
+- **OpenHaulBench** - A benchmark for whether an agent stays right over a 12-hour shift or several simulated days, scored by a deterministic program, with the cost of each run
+  - Website: https://github.com/open-haul/open-haul-bench
+  - Paper: https://doi.org/10.5281/zenodo.24608499
+  - Year: 2026
+  - Tags: long-horizon, agents, memory, context, cost, deterministic grader
+
 - **SUPER** - Evaluating Agents on Setting Up and Executing Tasks from Research Repositories
   - Code: https://github.com/allenai/super-benchmark
   - Paper: https://arxiv.org/abs/2409.07440
